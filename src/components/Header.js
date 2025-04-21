@@ -12,6 +12,15 @@ const Navbar = styled.header`
   align-items: center;
 `;
 
+const NavHeading = styled.h1`
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  &:hover {
+    color: #d9932c;
+  }
+`;
+
 // className="flex justify-between items-center py-4 px-8"
 
 const Header = () => {
@@ -35,27 +44,27 @@ const Header = () => {
         <ul className="flex gap-8 text-2xl text-white">
           <li>
             <Link href="/approach">
-              <h1>Our Approach</h1>
+              <NavHeading>Our Approach</NavHeading>
             </Link>
           </li>
           <li>
             <Link href="/about">
-              <h1>About</h1>
+              <NavHeading>About</NavHeading>
             </Link>
           </li>
           <li>
             <Link href="/gallery">
-              <h1>Gallery</h1>
+              <NavHeading>Gallery</NavHeading>
             </Link>
           </li>
           <li>
             <Link href="/contact">
-              <h1>Contact</h1>
+              <NavHeading>Contact</NavHeading>
             </Link>
           </li>
           <li>
             <Link href="/fees">
-              <h1>Fees</h1>
+              <NavHeading>Fees</NavHeading>
             </Link>
           </li>
         </ul>
