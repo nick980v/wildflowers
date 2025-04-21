@@ -10,28 +10,40 @@ const Container = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media (min-width: 640px) {
     margin-top: 60px;
-    width: 80%;
   }
 
   @media (min-width: 768px) {
     margin-top: 80px;
-    width: 70%;
   }
 
   @media (min-width: 1024px) {
     width: 100%;
-    max-width: 1200px;
+    max-width: none;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 60px;
   }
 `;
 
 const ContentContainer = styled.div`
+  width: 100%;
+  max-width: 590px;
+
+  @media (min-width: 640px) {
+    width: 80%;
+  }
+
+  @media (min-width: 768px) {
+    width: 70%;
+  }
+
   @media (min-width: 1024px) {
+    width: auto;
     flex: 1;
     max-width: 590px;
   }
@@ -66,7 +78,7 @@ const StyledHeading = styled.h1`
 const StyledParagraph = styled.p`
   font-size: 18px;
   color: white;
-  margin-top: 24px;
+  margin-top: 52px;
 
   @media (min-width: 640px) {
     font-size: 20px;
@@ -96,8 +108,17 @@ const ImageContainer = styled.div`
   position: relative;
   aspect-ratio: 684/763;
 
+  @media (min-width: 640px) {
+    width: 80%;
+  }
+
+  @media (min-width: 768px) {
+    width: 70%;
+  }
+
   @media (min-width: 1024px) {
     margin-top: 0;
+    width: auto;
     flex: 1;
     max-width: 500px;
   }
@@ -105,6 +126,34 @@ const ImageContainer = styled.div`
 
 const StyledImage = styled(Image)`
   object-fit: contain;
+`;
+
+const WhiteFlower = styled(Image)`
+  position: absolute;
+  width: 158px;
+  height: auto;
+  top: -10px;
+  left: -90px;
+  z-index: 2;
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
+`;
+
+const BlueFlower = styled(Image)`
+  position: absolute;
+  width: 325px;
+  height: auto;
+  bottom: -40px;
+  right: -110px;
+  z-index: 2;
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
 `;
 
 const Hero = () => {
@@ -129,6 +178,20 @@ const Hero = () => {
           </ButtonContainer>
         </ContentContainer>
         <ImageContainer>
+          <WhiteFlower
+            src="/White_flower.svg"
+            alt=""
+            width={158}
+            height={158}
+            priority
+          />
+          <BlueFlower
+            src="/Blue_flower.svg"
+            alt=""
+            width={325}
+            height={325}
+            priority
+          />
           <StyledImage
             src="/Sunset-homepage.png"
             alt="Sunset"
