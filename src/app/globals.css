@@ -1,16 +1,14 @@
 @import "tailwindcss";
 
+/* Define custom root variables for fonts */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-marco: 'marco', serif; /* Body font */
+  --font-fatfrank: 'fatfrank', sans-serif; /* Main heading font */
+  --font-providence-sans: 'ff-providence-sans-web-pro', sans-serif; /* Subheading font */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -22,5 +20,13 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-marco); 
+}
+
+h1 {
+  font-family: var(--font-fatfrank); 
+}
+
+h2, h3, h4 {
+  font-family: var(--font-providence-sans);
 }
