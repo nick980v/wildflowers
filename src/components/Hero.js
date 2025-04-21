@@ -2,55 +2,143 @@
 
 import styled from "styled-components";
 import Button from "./Button";
+import Image from "next/image";
 
 const Container = styled.div`
-  margin-top: 186px;
-  width: 590px;
+  margin-top: 40px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 640px) {
+    margin-top: 60px;
+    width: 80%;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 80px;
+    width: 70%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+  }
+`;
+
+const ContentContainer = styled.div`
+  @media (min-width: 1024px) {
+    flex: 1;
+    max-width: 590px;
+  }
 `;
 
 const StyledHeading = styled.h1`
   color: white;
-  font-size: 82.56px;
+  font-size: 42px;
   font-style: normal;
   font-weight: 900;
   line-height: 110%;
-  height: 250px;
+  height: auto;
+
+  @media (min-width: 640px) {
+    font-size: 52px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 62px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 82.56px;
+    height: 250px;
+  }
+
   span {
     color: #d9932c;
   }
 `;
 
 const StyledParagraph = styled.p`
-  font-size: 27.65px;
+  font-size: 18px;
   color: white;
-  margin-top: 52px;
+  margin-top: 24px;
+
+  @media (min-width: 640px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 23.05px;
+  }
 `;
 
 const ButtonContainer = styled.div`
-  margin-top: 52px;
+  margin-top: 32px;
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+    gap: 20px;
+  }
+`;
+
+const ImageContainer = styled.div`
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  position: relative;
+  aspect-ratio: 684/763;
+
+  @media (min-width: 1024px) {
+    margin-top: 0;
+    flex: 1;
+    max-width: 500px;
+  }
+`;
+
+const StyledImage = styled(Image)`
+  object-fit: contain;
 `;
 
 const Hero = () => {
   return (
-    <Container>
-      <StyledHeading>
-        Where <span>nature</span> brings <span>learning</span> to life!
-      </StyledHeading>
-      <StyledParagraph>
-        At Wild flowers, we believe that children thrive when given the freedom
-        to explore, create, and connect with the world around them.
-      </StyledParagraph>
-      <ButtonContainer>
-        <Button bgColor="#D9932C" href="/approach">
-          Learn More
-        </Button>
-        <Button bgColor="#D9932C" transparent href="/contact">
-          Contact Us
-        </Button>
-      </ButtonContainer>
-    </Container>
+    <>
+      <Container>
+        <ContentContainer>
+          <StyledHeading>
+            Where <span>nature</span> brings <span>learning</span> to life!
+          </StyledHeading>
+          <StyledParagraph>
+            At Wild flowers, we believe that children thrive when given the
+            freedom to explore, create, and connect with the world around them.
+          </StyledParagraph>
+          <ButtonContainer>
+            <Button bgColor="#D9932C" href="/approach">
+              Learn More
+            </Button>
+            <Button bgColor="#D9932C" transparent href="/contact">
+              Contact Us
+            </Button>
+          </ButtonContainer>
+        </ContentContainer>
+        <ImageContainer>
+          <StyledImage
+            src="/Sunset-homepage.png"
+            alt="Sunset"
+            fill
+            sizes="(min-width: 1024px) 500px, 100vw"
+            priority
+          />
+        </ImageContainer>
+      </Container>
+    </>
   );
 };
 
