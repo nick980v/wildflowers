@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import DividerSection from "@/components/DividerSection";
 import FAQs from "@/components/FAQs";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <DividerSection />
       <FAQs />
+      <Footer />
     </main>
   );
 }
