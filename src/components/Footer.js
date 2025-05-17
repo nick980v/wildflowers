@@ -163,8 +163,8 @@ const Footer = () => {
             </h1>
             <p style={{ color: "white", fontSize: "23px" }}>
               Whether you have a question, want to learn more about our
-              sessions, or are ready to join the Wild flowers community, we’re
-              here and happy to help.
+              sessions, or are ready to join the Wild flowers community,
+              we&apos;re here and happy to help.
             </p>
           </div>
           <div style={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
@@ -174,7 +174,7 @@ const Footer = () => {
           </div>
         </div>
         <p>
-          &copy; {new Date().getFullYear()} WildFlowers. All rights reserved.
+          &copy; {new Date().getFullYear()} Wild flowers. All rights reserved.
         </p>
       </div>
 
@@ -209,6 +209,27 @@ const Footer = () => {
             src="/Footer-overlay.svg"
             alt="Footer overlay"
             width={1920}
+            height={100}
+            style={{ width: "100%", height: "auto" }}
+          />
+        </div>
+        <div
+          style={{
+            position: "absolute",
+            top: "-5%",
+            left: "50%",
+            transform: "translateX(-50%)",
+            width: "75%",
+            height: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Image
+            src="/Footer-flowers.svg"
+            alt="Footer flowers"
+            width={800}
             height={100}
             style={{ width: "100%", height: "auto" }}
           />

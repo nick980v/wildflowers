@@ -112,6 +112,11 @@ const Header = () => {
           </Link>
         </li>
         <li>
+          <Link href="/fees">
+            <NavHeading>Service & fees</NavHeading>
+          </Link>
+        </li>
+        <li>
           <Link href="/about">
             <NavHeading>About</NavHeading>
           </Link>
@@ -127,8 +132,8 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link href="/fees">
-            <NavHeading>Fees</NavHeading>
+          <Link href="/news">
+            <NavHeading>News</NavHeading>
           </Link>
         </li>
       </NavList>
@@ -138,17 +143,20 @@ const Header = () => {
         <Link href="/approach" onClick={() => setIsMenuOpen(false)}>
           <NavHeading>Our Approach</NavHeading>
         </Link>
+        <Link href="/fees" onClick={() => setIsMenuOpen(false)}>
+          <NavHeading>Service & fees</NavHeading>
+        </Link>
         <Link href="/about" onClick={() => setIsMenuOpen(false)}>
           <NavHeading>About</NavHeading>
         </Link>
         <Link href="/gallery" onClick={() => setIsMenuOpen(false)}>
           <NavHeading>Gallery</NavHeading>
         </Link>
+        <Link href="/news" onClick={() => setIsMenuOpen(false)}>
+          <NavHeading>News</NavHeading>
+        </Link>
         <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
           <NavHeading>Contact</NavHeading>
-        </Link>
-        <Link href="/fees" onClick={() => setIsMenuOpen(false)}>
-          <NavHeading>Fees</NavHeading>
         </Link>
       </MobileMenu>
     </Navbar>
