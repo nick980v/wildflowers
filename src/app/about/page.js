@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 export default function About() {
@@ -8,6 +9,7 @@ export default function About() {
         <h1 className="text-4xl font-bold mb-6">About Us</h1>
         {/* Add your content here */}
       </div>
+      <Footer />
     </main>
   );
 }

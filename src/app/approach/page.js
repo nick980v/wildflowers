@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
 export default function Approach() {
@@ -8,6 +9,7 @@ export default function Approach() {
         <h1 className="text-4xl font-bold mb-6">Our Approach</h1>
         {/* Add your content here */}
       </div>
+      <Footer />
     </main>
   );
 }

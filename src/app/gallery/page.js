@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function Gallery() {
   return (
@@ -8,6 +9,7 @@ export default function Gallery() {
         <h1 className="text-4xl font-bold mb-6">Gallery</h1>
         {/* Add your content here */}
       </div>
+      <Footer />
     </main>
   );
 }

@@ -25,7 +25,7 @@ const Container = styled.div`
     max-width: none;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 60px;
   }
 `;
