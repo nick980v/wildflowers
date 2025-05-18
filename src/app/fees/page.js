@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import styles from "./page.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Fees() {
   return (
@@ -32,7 +33,8 @@ export default function Fees() {
           </ul>
           <p className={styles.text}>
             We end each term with a gentle celebration and reflection, honouring
-            the children’s experiences and the power of learning through nature.
+            the children&apos;s experiences and the power of learning through
+            nature.
           </p>
           <p className={styles.text}>
             Every session is carefully planned to support all areas of the EYFS,
@@ -51,59 +53,138 @@ export default function Fees() {
           className={styles.lavender}
         />
       </div>
-      <div style={{ backgroundColor: "#4C6E3D" }}>
-        <h1 className={styles.subHeading}>The schedule</h1>
+      <div
+        style={{
+          backgroundColor: "#4C6E3D",
+          width: "100vw",
+          position: "relative",
+          left: "50%",
+          right: "50%",
+          marginLeft: "-50vw",
+          marginRight: "-50vw",
+          padding: "2rem 0",
+        }}
+      >
+        <div className="px-4 sm:px-8 md:px-12 lg:px-[168px]">
+          <h1 className={styles.subHeading}>The schedule</h1>
+          <p className={styles.text}>
+            Wild flowers runs every Friday, offering two gentle, nature-inspired
+            sessions to suit different routines:
+          </p>
+          <h1 className={styles.sessionText}>
+            Morning Session:{" "}
+            <span className={styles.timingsText}>9:00am – 11:30am</span>
+          </h1>
+          <h1 className={styles.sessionText}>
+            Afternoon Session:{" "}
+            <span className={styles.timingsText}>2:00pm – 4:30pm</span>
+          </h1>
+          <p className={styles.text}>
+            Additionally, Wild flowers welcomes you to join us for a gentle and
+            welcoming lunchtime session, where families can come together to
+            share food, conversation, and connection. This is more than just a
+            meal, it&apos;s a shared social experience, open to all in the local
+            community.
+          </p>
+          <h1 className={styles.sessionText}>
+            Community Lunchtime Session:{" "}
+            <span className={styles.timingsText}>12:00pm – 1:30pm</span>
+          </h1>
+          <div className={styles.fees}>
+            <Image
+              src="/Sunset-homepage.png"
+              alt="Sunset image"
+              width={448}
+              height={100}
+              className={styles.lavender}
+            />
+            <div>
+              <p className={styles.text}>
+                Join us for our warm and welcoming lunchtime gathering, a
+                relaxed and social space for families to come together, share
+                food, and connect. This is a time to pause, enjoy one
+                another&apos;s company, and build a sense of belonging within
+                the community. We provide wholesome, nourishing snacks, and
+                you&apos;re welcome to bring your own lunch to enjoy alongside
+                others.
+              </p>
+              <p className={styles.text}>
+                During the lunchtime session, children can enjoy outdoor play,
+                nature exploration, child-led play indoors, and a cosy story
+                time, creating a gentle rhythm to the day while supporting
+                natural curiosity and connection.
+              </p>
+              <p className={styles.text}>
+                You do not need to be enrolled in a Wild flowers session to join
+                us for lunch—this is an open invitation to all in the local
+                community. Everyone is welcome. Come as you are, bring your
+                lunch, and share in the joy of community. Wild flowers is open
+                during school half terms, welcoming families to enjoy seasonal
+                learning and play throughout the year.
+              </p>
+              <p className={styles.text}>
+                <span style={{ color: "#9CB7D4" }}>Please note: </span>We take a
+                break during the Christmas, Easter, and summer holidays to rest,
+                reflect, and prepare for the next chapter of our journey
+                together.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style={{ marginTop: "3rem" }}>
+        <h1 className={styles.subHeading}>The offer</h1>
         <p className={styles.text}>
-          Wild flowers runs every Friday, offering two gentle, nature-inspired
-          sessions to suit different routines:
+          Our creative, nature-inspired sessions follow a carefully designed
+          12-week program, rooted in the Early Years Foundation Stage (EYFS)
+          curriculum. Through hands-on experiences, storytelling, movement, and
+          outdoor play, children are encouraged to develop confidence,
+          independence, and a deep love for learning— at their own pace and in
+          their own unique way.
         </p>
-        <h1 className={styles.sessionText}>
-          Morning Session:{" "}
-          <span className={styles.timingsText}>9:00am – 11:30am</span>
-        </h1>
-        <h1 className={styles.sessionText}>
-          Afternoon Session:{" "}
-          <span className={styles.timingsText}>2:00pm – 4:30pm</span>
-        </h1>
-        <p className={styles.text}>
-          Additionally, Wild flowers welcomes you to join us for a gentle and
-          welcoming lunchtime session, where families can come together to share
-          food, conversation, and connection. This is more than just a meal,
-          it’s a shared social experience, open to all in the local community.
-        </p>
-        <h1 className={styles.sessionText}>
-          Community Lunchtime Session:{" "}
-          <span className={styles.timingsText}>12:00pm – 1:30pm</span>
-        </h1>
-
-        <p className={styles.text}>
-          Join us for our warm and welcoming lunchtime gathering, a relaxed and
-          social space for families to come together, share food, and connect.
-          This is a time to pause, enjoy one another’s company, and build a
-          sense of belonging within the community. We provide wholesome,
-          nourishing snacks, and you’re welcome to bring your own lunch to enjoy
-          alongside others.
-        </p>
-        <p className={styles.text}>
-          During the lunchtime session, children can enjoy outdoor play, nature
-          exploration, child-led play indoors, and a cosy story time, creating a
-          gentle rhythm to the day while supporting natural curiosity and
-          connection.
-        </p>
-        <p className={styles.text}>
-          You do not need to be enrolled in a Wild flowers session to join us
-          for lunch—this is an open invitation to all in the local community.
-          Everyone is welcome. Come as you are, bring your lunch, and share in
-          the joy of community. Wild flowers is open during school half terms,
-          welcoming families to enjoy seasonal learning and play throughout the
-          year.
-        </p>
-        <p className={styles.text}>
-          <span style={{ color: "#9CB7D4" }}>Please note: </span>We take a break
-          during the Christmas, Easter, and summer holidays to rest, reflect,
-          and prepare for the next chapter of our journey together. The Approach
-          to Learning
-        </p>
+        <div className={styles.container}>
+          <div>
+            <h1 className={styles.subHeading}>Fees</h1>
+            <p className={styles.text}>
+              Each 2.5 hour Wild flowers session is{" "}
+              <span style={{ color: "#D9932C" }}>£15</span>, and this fee
+              includes all the resources required for an engaging and creative
+              experience.
+            </p>
+            <p className={styles.text}>
+              Parents have the flexibility to pay as they go or to prepay
+              sessions upfront. If you choose the prepayment option, you&apos;ll
+              receive a <span style={{ color: "#D9932C" }}>10% discount</span>{" "}
+              along with a free welcome pack—which includes a Wild flowers
+              drawstring bag, a name tag, a magnifying glass, and many
+              surprises! For families who prefer to pay weekly, the welcome pack
+              is available for <span style={{ color: "#D9932C" }}>£10</span>.
+            </p>
+            <p className={styles.text}>
+              Additionally, our lunchtime session is offered at{" "}
+              <span style={{ color: "#D9932C" }}>£5</span> per child, providing
+              a wonderful opportunity for extra community connection
+            </p>
+            <p className={styles.text}>
+              For queries relating to fees and payment, please get in touch
+              using the details provided on our{" "}
+              <Link
+                href="/contact"
+                style={{ color: "#D9932C", textDecoration: "none" }}
+              >
+                &apos;Contact Us&apos;
+              </Link>{" "}
+              page.
+            </p>
+          </div>
+          <Image
+            src="/Fees-flowers.svg"
+            alt="Fees flowers"
+            width={400}
+            height={100}
+            className={styles.lavender}
+          />
+        </div>
       </div>
       <Footer />
     </main>
