@@ -1,14 +1,26 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import styles from "./page.module.css";
+import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
   return (
     <main className="min-h-screen flex flex-col bg-[#062F21] text-[#3a3a3a] px-4 sm:px-8 md:px-12 lg:px-[168px] pt-8 sm:pt-12 md:pt-16 lg:pt-[70px]">
       <Header />
-      <div className="mt-8">
-        <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
-        {/* Add your content here */}
+      <div className={styles.container}>
+        <div style={{ maxWidth: "566px" }}>
+          <h1 className={styles.heading}>
+            Contact <span style={{ color: "#D9932C" }}>us</span>
+          </h1>
+          <p className={styles.text}>
+            Whether you have a question, want to learn more about our sessions,
+            or are ready to join the Wild flowers community, we’re here and
+            happy to help.
+          </p>
+        </div>
       </div>
+      <ContactForm />
+
       <Footer />
     </main>
   );
