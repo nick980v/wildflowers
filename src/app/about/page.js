@@ -65,6 +65,12 @@ export default function About() {
             from home, helping to extend the sense of connection and community
             that lies at the heart of Wildflowers.
           </p>
+          <Image
+            src="/RedFlowers.svg"
+            alt="Red flowers decoration"
+            width={63}
+            height={100}
+          />
         </div>
       </div>
       <Footer />

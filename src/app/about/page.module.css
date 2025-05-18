@@ -136,9 +136,23 @@
   flex: 1;
 }
 
+.column:last-child {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.column:last-child img {
+  margin-top: 0.5rem;
+}
+
 @media (max-width: 768px) {
   .twoColumnContainer {
     flex-direction: column;
     gap: 2rem;
+  }
+  .column:last-child {
+    flex-direction: column;
   }
 }
