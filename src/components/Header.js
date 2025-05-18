@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styled from "styled-components";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const Navbar = styled.header`
   display: flex;
@@ -22,6 +23,7 @@ const NavHeading = styled.h1`
     color: #d9932c;
   }
   font-size: 16px;
+  position: relative;
 
   @media (min-width: 640px) {
     font-size: 18px;
@@ -40,6 +42,26 @@ const NavList = styled.ul`
   @media (min-width: 768px) {
     display: flex;
     gap: 32px;
+  }
+`;
+
+const NavLink = styled(Link)`
+  position: relative;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-image: ${(props) =>
+      props.$isActive ? "url('/Nav_underline.svg')" : "none"};
+    background-repeat: no-repeat;
+    background-position: ${(props) => (props.$isMobile ? "left" : "center")};
+    opacity: ${(props) => (props.$isActive ? 1 : 0)};
+    transition: opacity 0.3s ease;
   }
 `;
 
@@ -74,10 +96,9 @@ const MobileMenu = styled.div`
   }
 `;
 
-// className="flex justify-between items-center py-4 px-8"
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -107,57 +128,87 @@ const Header = () => {
       {/* Navigation links */}
       <NavList>
         <li>
-          <Link href="/approach">
+          <NavLink href="/approach" $isActive={pathname === "/approach"}>
             <NavHeading>Our Approach</NavHeading>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link href="/fees">
+          <NavLink href="/fees" $isActive={pathname === "/fees"}>
             <NavHeading>Service & fees</NavHeading>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link href="/about">
+          <NavLink href="/about" $isActive={pathname === "/about"}>
             <NavHeading>About</NavHeading>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link href="/gallery">
+          <NavLink href="/gallery" $isActive={pathname === "/gallery"}>
             <NavHeading>Gallery</NavHeading>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link href="/contact">
+          <NavLink href="/contact" $isActive={pathname === "/contact"}>
             <NavHeading>Contact</NavHeading>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link href="/news">
+          <NavLink href="/news" $isActive={pathname === "/news"}>
             <NavHeading>News</NavHeading>
-          </Link>
+          </NavLink>
         </li>
       </NavList>
 
       {/* Mobile menu */}
       <MobileMenu $isOpen={isMenuOpen}>
-        <Link href="/approach" onClick={() => setIsMenuOpen(false)}>
+        <NavLink
+          href="/approach"
+          $isActive={pathname === "/approach"}
+          $isMobile={true}
+          onClick={() => setIsMenuOpen(false)}
+        >
           <NavHeading>Our Approach</NavHeading>
-        </Link>
-        <Link href="/fees" onClick={() => setIsMenuOpen(false)}>
+        </NavLink>
+        <NavLink
+          href="/fees"
+          $isActive={pathname === "/fees"}
+          $isMobile={true}
+          onClick={() => setIsMenuOpen(false)}
+        >
           <NavHeading>Service & fees</NavHeading>
-        </Link>
-        <Link href="/about" onClick={() => setIsMenuOpen(false)}>
+        </NavLink>
+        <NavLink
+          href="/about"
+          $isActive={pathname === "/about"}
+          $isMobile={true}
+          onClick={() => setIsMenuOpen(false)}
+        >
           <NavHeading>About</NavHeading>
-        </Link>
-        <Link href="/gallery" onClick={() => setIsMenuOpen(false)}>
+        </NavLink>
+        <NavLink
+          href="/gallery"
+          $isActive={pathname === "/gallery"}
+          $isMobile={true}
+          onClick={() => setIsMenuOpen(false)}
+        >
           <NavHeading>Gallery</NavHeading>
-        </Link>
-        <Link href="/news" onClick={() => setIsMenuOpen(false)}>
+        </NavLink>
+        <NavLink
+          href="/news"
+          $isActive={pathname === "/news"}
+          $isMobile={true}
+          onClick={() => setIsMenuOpen(false)}
+        >
           <NavHeading>News</NavHeading>
-        </Link>
-        <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
+        </NavLink>
+        <NavLink
+          href="/contact"
+          $isActive={pathname === "/contact"}
+          $isMobile={true}
+          onClick={() => setIsMenuOpen(false)}
+        >
           <NavHeading>Contact</NavHeading>
-        </Link>
+        </NavLink>
       </MobileMenu>
     </Navbar>
   );

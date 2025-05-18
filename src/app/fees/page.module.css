@@ -30,6 +30,29 @@
   }
 } 
 
+/* const ContentContainer = styled.div`
+  width: 100%;
+  max-width: 590px;
+
+  @media (min-width: 640px) {
+    width: 80%;
+  }
+
+  @media (min-width: 768px) {
+    width: 70%;
+  }
+
+  @media (min-width: 1024px) {
+    width: auto;
+    flex: 1;
+    max-width: 590px;
+  }
+`; */
+
+.contentContainer {
+    width: 100%;
+}
+
 .heading {
   color: white;
   font-size: 42px;
@@ -37,32 +60,93 @@
   font-weight: 900;
   line-height: 110%;
   height: auto;
+  margin-bottom: 2rem;
 }
+
+.subHeading {
+    color: white;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
 
 .headingHighlight {
   color: #d9932c;
 }
 
+.text {
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
 
+.text ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 1.5rem 0;
+}
+
+.text li {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.text li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url('/White_flower.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sessionText {
+    color: #9CB7D4;
+    font-size: 23px;
+    margin-bottom: 1.5rem;
+
+}
+
+.timingsText {
+    color: white;
+    font-size: 23px
+}
 
 @media (min-width: 640px) {
   .heading {
     font-size: 52px;
   }
- 
+  .text {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 768px) {
   .heading {
     font-size: 62px;
   }
- 
+  .text {
+    font-size: 22px;
+  }
 }
 
 @media (min-width: 1024px) {
   .heading {
     font-size: 82.56px;
-    height: 250px;
   }
-
+  .subHeading {
+    font-size: 48px
+  }
+  .text {
+    font-size: 24px;
+  }
 }
