@@ -99,6 +99,31 @@
     margin-bottom: 1.5rem;
     font-style: normal;
   }
+  
+  .text ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+  }
+  
+  .text li {
+    position: relative;
+    padding-left: 2rem;
+  }
+  
+  .text li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-image: url('/White_flower.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   @media (min-width: 640px) {
     .heading {

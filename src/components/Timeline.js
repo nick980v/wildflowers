@@ -4,28 +4,7 @@
 
 import { useState, useEffect, useRef } from "react";
 
-const timelineItems = [
-  {
-    text: "Encouraging free play and self-expression through song storytelling, movement, and natural materials ",
-  },
-  {
-    text: "Creating rhythmic routines that give children a sense of security and belonging",
-  },
-  {
-    text: 'Offering "gifts" and simple tools that inspire creativity, pattern making, and problem-solving ',
-  },
-  {
-    text: "Embracing the outdoors as a living classroom, where children develop deep relationships with the natural world",
-  },
-  {
-    text: "Valuing community and relationships, where adults gently guide, observe, and support learning",
-  },
-  {
-    text: "Supporting children\'s spiritual and emotional development through wonder, beauty, and meaningful experiences",
-  },
-];
-
-export default function FroebelTimeline() {
+export default function Timeline({ timelineItems, dotColor }) {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [scrolledIndex, setScrolledIndex] = useState(null);
   const itemRefs = useRef([]);
@@ -116,9 +95,9 @@ export default function FroebelTimeline() {
               <div
                 className={`w-4 h-4 rounded-full transition-colors duration-200 ${
                   isCurrentlyActive
-                    ? "bg-[#92262A] border-transparent"
+                    ? `bg-[${dotColor}] border-transparent`
                     : "bg-[#4C6E3D] border-2"
-                } group-hover:bg-[#92262A] group-hover:border-transparent`}
+                } group-hover:bg-[${dotColor}] group-hover:border-transparent`}
               ></div>
 
               {/* Content */}

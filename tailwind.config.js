@@ -12,4 +12,10 @@ module.exports = {
       },
     },
   },
+  safelist: [
+    "bg-[#D9932C]",
+    "border-[#D9932C]",
+    "bg-[#92262A]",
+    "border-[#92262A]",
+  ],
 };

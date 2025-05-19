@@ -2,7 +2,49 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import styles from "./page.module.css";
 import Image from "next/image";
-import FroebelTimeline from "@/components/Timeline";
+import Timeline from "@/components/Timeline";
+
+const froebelTimelineItems = [
+  {
+    text: "Encouraging free play and self-expression through song storytelling, movement, and natural materials ",
+  },
+  {
+    text: "Creating rhythmic routines that give children a sense of security and belonging",
+  },
+  {
+    text: 'Offering "gifts" and simple tools that inspire creativity, pattern making, and problem-solving ',
+  },
+  {
+    text: "Embracing the outdoors as a living classroom, where children develop deep relationships with the natural world",
+  },
+  {
+    text: "Valuing community and relationships, where adults gently guide, observe, and support learning",
+  },
+  {
+    text: "Supporting children\'s spiritual and emotional development through wonder, beauty, and meaningful experiences",
+  },
+];
+
+const montessoriTimelineItems = [
+  {
+    text: "Set up our indoor and outdoor spaces to promote independence and choice",
+  },
+  {
+    text: "Use real-life tools and materials that are hands-on, beautiful, and purposeful",
+  },
+  {
+    text: "Encourage care of self, others, and the environment from pouring water to tidying up to looking after plants",
+  },
+  {
+    text: "Observe rather than instruct, allowing children to lead their learning",
+  },
+  {
+    text: "Foster deep focus and satisfaction through meaningful, repeatable tasks",
+  },
+  {
+    text: "Respect the child as a whole person, capable, curious, and full of potential",
+  },
+];
 
 export default function Approach() {
   return (
@@ -32,7 +74,69 @@ export default function Approach() {
       <h1 className={styles.subHeading} style={{ marginBottom: "3rem" }}>
         How we honour Froebel&apos;s legacy
       </h1>
-      <FroebelTimeline />
+      <Timeline timelineItems={froebelTimelineItems} dotColor={"#92262A"} />
+      <div className={styles.container}>
+        <div className={styles.contentContainer}>
+          <h1 className={styles.heading}>
+            The <span style={{ color: "#D9932C" }}>Montessori</span> approach
+          </h1>
+          <p className={styles.text}>
+            Maria Montessori (1870–1952), an Italian physician and educator,
+            believed that children are naturally motivated to learn and flourish
+            when given the freedom to follow their own path. Her method focuses
+            on independence, concentration, purposeful activity, and creating a
+            calm, ordered environment that meets a child’s developmental needs.
+          </p>
+        </div>
+        <Image
+          src="/Sunset-homepage.png"
+          alt="Claudine photo"
+          className={styles.imageContainer}
+          width={684}
+          height={100}
+        />
+      </div>
+      <h1 className={styles.subHeading} style={{ marginBottom: "3rem" }}>
+        How we reflect Montessori&apos;s principles
+      </h1>
+      <Timeline timelineItems={montessoriTimelineItems} dotColor={"#D9932C"} />
+      <div className={styles.container}>
+        <div className={styles.contentContainer}>
+          <h1 className={styles.subHeading}>
+            A harmonious blend at Wild flowers
+          </h1>
+          <p className={styles.text}>
+            By combining these two inspiring approaches, Wild flowers offers
+            something truly special. From Froebel, we bring warmth, rhythm,
+            song, storytelling, nature, and play. From Montessori, we offer
+            structure, calm independence, purposeful activity, and respect for
+            the child’s inner drive. Together, they create a rich, balanced
+            environment where children can:
+          </p>
+          <ul className={styles.text}>
+            <li>Explore at their own pace</li>
+            <li>
+              Build strong relationships with their peers and trusted adults
+            </li>
+            <li>Engage deeply with nature, materials, and community</li>
+            <li>
+              Grow holistically—physically, emotionally, socially, and
+              intellectually{" "}
+            </li>
+          </ul>
+          <p className={styles.text}>
+            At Wild flowers, we don’t rush childhood. We create a gentle space
+            where learning unfolds naturally and joyfully, just as it should.
+          </p>
+        </div>
+        <Image
+          src="/ApproachFlowers.svg"
+          alt="Approach Flowers"
+          // className={styles.imageContainer}
+          width={537}
+          height={100}
+        />
+      </div>
       <Footer />
     </main>
   );
