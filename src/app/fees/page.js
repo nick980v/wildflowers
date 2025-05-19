@@ -90,7 +90,7 @@ export default function Fees() {
             Community Lunchtime Session:{" "}
             <span className={styles.timingsText}>12:00pm – 1:30pm</span>
           </h1>
-          <div className={styles.fees}>
+          <div className={styles.container}>
             <Image
               src="/Sunset-homepage.png"
               alt="Sunset image"
@@ -98,7 +98,7 @@ export default function Fees() {
               height={100}
               className={styles.lavender}
             />
-            <div>
+            <div className={styles.contentContainer}>
               <p className={styles.text}>
                 Join us for our warm and welcoming lunchtime gathering, a
                 relaxed and social space for families to come together, share
