@@ -37,7 +37,7 @@ export default function About() {
         <Image
           src="/Sunset-homepage.png"
           alt="Claudine photo"
-          style={styles.imageContainer}
+          className={styles.imageContainer}
           width={684}
           height={100}
         />
