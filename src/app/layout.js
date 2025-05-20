@@ -1,4 +1,6 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "Wild flowers",
@@ -19,6 +21,8 @@ export default function RootLayout({ children }) {
         />
         <link rel="stylesheet" href="https://use.typekit.net/tav0gkp.css" />
       </head>
+      <Analytics />
+      <SpeedInsights />
       <body>{children}</body>
     </html>
   );
