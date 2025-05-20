@@ -25,24 +25,38 @@ const DividerContainer = styled.div`
 `;
 
 const ContentContainer = styled.div`
-  position: absolute;
-
-  /* transform: translate(-50%, -50%); */
   width: 100%;
   max-width: 733px;
   padding: 0 20px;
   z-index: 1;
 
+  @media (max-width: 1023px) {
+    position: relative;
+    z-index: 2;
+    background-color: #9cb7d4;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 40px;
+  }
+
   @media (min-width: 1024px) {
+    position: absolute;
     transform: translate(-40%, -50%);
     top: 50%;
     left: 60%;
+    background-color: transparent;
+    padding: 0 20px;
+    margin: 0;
   }
 `;
 
 const StyledDivider = styled(Image)`
   width: 100%;
   height: auto;
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
 `;
 
 const FlowerGroup = styled(Image)`

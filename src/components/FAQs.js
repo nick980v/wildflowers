@@ -15,7 +15,12 @@ const StyledHeading = styled.h1`
   font-size: 47.78px;
   color: white;
   text-align: center;
-  margin-bottom: 126px;
+  margin-bottom: 100px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
 `;
 
 const FAQS = () => {
