@@ -47,6 +47,7 @@ export default function About() {
             className={styles.headshot}
             width={3060}
             height={100}
+            priority
           />
           <Image
             src="/Petal.svg"
@@ -54,6 +55,7 @@ export default function About() {
             width={158}
             height={158}
             className={styles.whiteFlower}
+            priority
           />
           <Image
             src="/Lavender.svg"
@@ -61,6 +63,7 @@ export default function About() {
             width={325}
             height={325}
             className={styles.blueFlower}
+            priority
           />
         </div>
       </div>
@@ -85,7 +88,7 @@ export default function About() {
             here first, giving our families early access to updates. Parents are
             warmly encouraged to share photos (with consent) and special moments
             from home, helping to extend the sense of connection and community
-            that lies at the heart of Wildflowers.
+            that lies at the heart of Wild flowers.
           </p>
           <Image
             src="/RedFlowers.svg"

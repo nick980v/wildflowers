@@ -75,6 +75,7 @@ export default function Approach() {
           className={styles.imageContainer}
           width={684}
           height={100}
+          priority
         />
       </div>
       <h1 className={styles.subHeading} style={{ marginBottom: "3rem" }}>
