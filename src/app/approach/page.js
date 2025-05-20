@@ -4,6 +4,12 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import Timeline from "@/components/Timeline";
 
+export const metadata = {
+  title: "Our Approach - Wild flowers",
+  description:
+    "Discover the unique blend of Froebelian and Montessori approaches at Wild flowers community. Learn how we foster child-led, nature-based learning through play, exploration, and purposeful activity.",
+};
+
 const froebelTimelineItems = [
   {
     text: "Encouraging free play and self-expression through song storytelling, movement, and natural materials ",
@@ -85,7 +91,8 @@ export default function Approach() {
             believed that children are naturally motivated to learn and flourish
             when given the freedom to follow their own path. Her method focuses
             on independence, concentration, purposeful activity, and creating a
-            calm, ordered environment that meets a child’s developmental needs.
+            calm, ordered environment that meets a child&apos;s developmental
+            needs.
           </p>
         </div>
         <Image
@@ -110,7 +117,7 @@ export default function Approach() {
             something truly special. From Froebel, we bring warmth, rhythm,
             song, storytelling, nature, and play. From Montessori, we offer
             structure, calm independence, purposeful activity, and respect for
-            the child’s inner drive. Together, they create a rich, balanced
+            the child&apos;s inner drive. Together, they create a rich, balanced
             environment where children can:
           </p>
           <ul className={styles.text}>
@@ -125,8 +132,9 @@ export default function Approach() {
             </li>
           </ul>
           <p className={styles.text}>
-            At Wild flowers, we don’t rush childhood. We create a gentle space
-            where learning unfolds naturally and joyfully, just as it should.
+            At Wild flowers, we don&apos;t rush childhood. We create a gentle
+            space where learning unfolds naturally and joyfully, just as it
+            should.
           </p>
         </div>
         <Image

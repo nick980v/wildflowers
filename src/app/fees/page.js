@@ -4,6 +4,12 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Service & Fees - Wild flowers",
+  description:
+    "Explore the Wild flowers community fees and schedule. Learn about our 12-week seasonal journey, session timings, community lunch, and flexible payment options.",
+};
+
 export default function Fees() {
   return (
     <main className="min-h-screen flex flex-col bg-[#062F21] text-[#3a3a3a] px-4 sm:px-8 md:px-12 lg:px-[168px] pt-8 sm:pt-12 md:pt-16 lg:pt-[70px]">

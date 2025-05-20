@@ -3,6 +3,12 @@ import Header from "@/components/Header";
 import styles from "./page.module.css";
 import Image from "next/image";
 
+export const metadata = {
+  title: "About Us - Wild flowers",
+  description:
+    "Learn about Wild flowers community, led by experienced practitioner Claudine. Discover our child-led, nature-based approach to early years learning in a nurturing and inclusive environment.",
+};
+
 export default function About() {
   return (
     <main className="min-h-screen flex flex-col bg-[#062F21] text-[#3a3a3a] px-4 sm:px-8 md:px-12 lg:px-[168px] pt-8 sm:pt-12 md:pt-16 lg:pt-[70px]">
