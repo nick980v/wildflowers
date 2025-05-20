@@ -34,13 +34,29 @@ export default function About() {
             and their grown-ups can grow, explore, and learn together.
           </p>
         </div>
-        <Image
-          src="/Sunset-homepage.png"
-          alt="Claudine photo"
-          className={styles.imageContainer}
-          width={684}
-          height={100}
-        />
+        <div className={styles.imageContainer}>
+          <Image
+            src="/Claudine-headshot.jpg"
+            alt="Claudine photo"
+            className={styles.headshot}
+            width={3060}
+            height={100}
+          />
+          <Image
+            src="/Petal.svg"
+            alt="Decorative white flower"
+            width={158}
+            height={158}
+            className={styles.whiteFlower}
+          />
+          <Image
+            src="/Lavender.svg"
+            alt="Decorative blue flower"
+            width={325}
+            height={325}
+            className={styles.blueFlower}
+          />
+        </div>
       </div>
       <h1 className={styles.subHeading}>
         Keeping <span style={{ color: "#D9932C" }}>connected</span>
