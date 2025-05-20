@@ -26,9 +26,8 @@ const DividerContainer = styled.div`
 
 const ContentContainer = styled.div`
   position: absolute;
-  top: 50%;
-  left: 60%;
-  transform: translate(-50%, -50%);
+
+  /* transform: translate(-50%, -50%); */
   width: 100%;
   max-width: 733px;
   padding: 0 20px;
@@ -36,6 +35,8 @@ const ContentContainer = styled.div`
 
   @media (min-width: 1024px) {
     transform: translate(-40%, -50%);
+    top: 50%;
+    left: 60%;
   }
 `;
 

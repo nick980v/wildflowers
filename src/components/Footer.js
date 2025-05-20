@@ -19,6 +19,44 @@ const ContactUsContainer = styled.div`
   margin-bottom: 0.5rem;
 `;
 
+const InterestedContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 2rem;
+  margin-top: 2rem;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center; /* Center items when stacked */
+    gap: 1.5rem; /* Adjust gap for mobile */
+  }
+`;
+
+const InterestedTextContainer = styled.div`
+  text-align: left;
+  flex: 1;
+  /* Ensure text aligns center on mobile if desired */
+  @media (max-width: 767px) {
+    text-align: center; /* Center text on mobile */
+    flex: none; /* Remove flex-1 on mobile */
+    width: 100%; /* Take full width */
+  }
+`;
+
+const InterestedButtonContainer = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: 767px) {
+    flex: none; /* Remove flex-1 on mobile */
+    width: 100%; /* Take full width */
+    justify-content: center; /* Center button on mobile */
+  }
+`;
+
 const Footer = () => {
   return (
     <footer
@@ -145,17 +183,8 @@ const Footer = () => {
           opacity: 0.8,
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginBottom: "2rem",
-            gap: "2rem",
-            marginTop: "2rem",
-          }}
-        >
-          <div style={{ textAlign: "left", flex: 1 }}>
+        <InterestedContainer>
+          <InterestedTextContainer>
             <h1
               style={{ color: "white", marginBottom: "1rem", fontSize: "28px" }}
             >
@@ -166,13 +195,13 @@ const Footer = () => {
               sessions, or are ready to join the Wild flowers community,
               we&apos;re here and happy to help.
             </p>
-          </div>
-          <div style={{ flex: 1, display: "flex", justifyContent: "flex-end" }}>
+          </InterestedTextContainer>
+          <InterestedButtonContainer>
             <Button href="/contact" bgColor="#D9932C">
               Contact Us
             </Button>
-          </div>
-        </div>
+          </InterestedButtonContainer>
+        </InterestedContainer>
         <p>
           &copy; {new Date().getFullYear()} Wild flowers. All rights reserved.
         </p>

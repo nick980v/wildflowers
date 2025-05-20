@@ -67,7 +67,6 @@ const StyledHeading = styled.h1`
 
   @media (min-width: 1024px) {
     font-size: 82.56px;
-    height: 250px;
   }
 
   span {
