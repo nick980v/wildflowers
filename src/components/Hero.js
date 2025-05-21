@@ -45,7 +45,7 @@ const ContentContainer = styled.div`
   @media (min-width: 1024px) {
     width: auto;
     flex: 1;
-    max-width: 590px;
+    max-width: 600px;
   }
 `;
 
@@ -161,7 +161,7 @@ const Hero = () => {
       <Container>
         <ContentContainer>
           <StyledHeading>
-            Where <span>nature</span> brings <span>learning</span> to life!
+            Where <span>Nature</span> Brings <span>Learning</span> To Life!
           </StyledHeading>
           <StyledParagraph>
             At Wild flowers, we believe that children thrive when given the

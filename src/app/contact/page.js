@@ -16,7 +16,7 @@ export default function Contact() {
       <div className={styles.container}>
         <div style={{ maxWidth: "566px" }}>
           <h1 className={styles.heading}>
-            Contact <span style={{ color: "#D9932C" }}>us</span>
+            Contact <span style={{ color: "#D9932C" }}>Us</span>
           </h1>
           <p className={styles.text}>
             Whether you have a question, want to learn more about our sessions,

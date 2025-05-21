@@ -115,7 +115,7 @@ const Header = () => {
             width={279}
             height={37}
             priority
-            style={{ width: "auto", height: "auto", maxWidth: "200px" }}
+            style={{ maxWidth: "200px", height: "auto" }}
           />
         </Link>
       </div>
@@ -133,13 +133,18 @@ const Header = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink href="/fees" $isActive={pathname === "/fees"}>
-            <NavHeading>Service & fees</NavHeading>
+          <NavLink href="/about" $isActive={pathname === "/about"}>
+            <NavHeading>About</NavHeading>
           </NavLink>
         </li>
         <li>
-          <NavLink href="/about" $isActive={pathname === "/about"}>
-            <NavHeading>About</NavHeading>
+          <NavLink href="/fees" $isActive={pathname === "/fees"}>
+            <NavHeading>Service & Fees</NavHeading>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink href="/news" $isActive={pathname === "/news"}>
+            <NavHeading>News</NavHeading>
           </NavLink>
         </li>
         <li>
@@ -150,11 +155,6 @@ const Header = () => {
         <li>
           <NavLink href="/contact" $isActive={pathname === "/contact"}>
             <NavHeading>Contact</NavHeading>
-          </NavLink>
-        </li>
-        <li>
-          <NavLink href="/news" $isActive={pathname === "/news"}>
-            <NavHeading>News</NavHeading>
           </NavLink>
         </li>
       </NavList>
@@ -170,14 +170,6 @@ const Header = () => {
           <NavHeading>Our Approach</NavHeading>
         </NavLink>
         <NavLink
-          href="/fees"
-          $isActive={pathname === "/fees"}
-          $isMobile={true}
-          onClick={() => setIsMenuOpen(false)}
-        >
-          <NavHeading>Service & fees</NavHeading>
-        </NavLink>
-        <NavLink
           href="/about"
           $isActive={pathname === "/about"}
           $isMobile={true}
@@ -186,12 +178,12 @@ const Header = () => {
           <NavHeading>About</NavHeading>
         </NavLink>
         <NavLink
-          href="/gallery"
-          $isActive={pathname === "/gallery"}
+          href="/fees"
+          $isActive={pathname === "/fees"}
           $isMobile={true}
           onClick={() => setIsMenuOpen(false)}
         >
-          <NavHeading>Gallery</NavHeading>
+          <NavHeading>Service & fees</NavHeading>
         </NavLink>
         <NavLink
           href="/news"
@@ -200,6 +192,14 @@ const Header = () => {
           onClick={() => setIsMenuOpen(false)}
         >
           <NavHeading>News</NavHeading>
+        </NavLink>
+        <NavLink
+          href="/gallery"
+          $isActive={pathname === "/gallery"}
+          $isMobile={true}
+          onClick={() => setIsMenuOpen(false)}
+        >
+          <NavHeading>Gallery</NavHeading>
         </NavLink>
         <NavLink
           href="/contact"

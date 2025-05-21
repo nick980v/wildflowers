@@ -109,7 +109,7 @@ export default function ContactForm() {
           width={70}
           height={40}
         />
-        Contact form
+        Contact Form
       </SubHeading>
       <Text>
         We aim to get back to you as soon as possible. We can&apos;t wait to

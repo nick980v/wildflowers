@@ -16,7 +16,7 @@ export default function About() {
       <div className={styles.container}>
         <div className={styles.contentContainer}>
           <h1 className={styles.heading}>
-            About <span style={{ color: "#D9932C" }}>us</span>
+            About <span style={{ color: "#D9932C" }}>Us</span>
           </h1>
           <p className={styles.text}>
             Claudine is the heart behind Wild flowers – a passionate and
@@ -67,37 +67,7 @@ export default function About() {
           />
         </div>
       </div>
-      <h1 className={styles.subHeading}>
-        Keeping <span style={{ color: "#D9932C" }}>connected</span>
-      </h1>
-      <div className={styles.twoColumnContainer}>
-        <div className={styles.column}>
-          <p className={styles.text}>
-            At Wild flowers, we believe in nurturing strong connections with our
-            families beyond the weekly sessions. To support this, we offer
-            ongoing communication through a friendly group chat forum, where
-            parents and carers can ask questions, stay informed, and feel part
-            of the community throughout the week. Details of upcoming sessions
-            will be shared in advance, so families can feel prepared for the
-            weather and activities.
-          </p>
-        </div>
-        <div className={styles.column}>
-          <p className={styles.text}>
-            Any exciting Wild flowers news or announcements will also be shared
-            here first, giving our families early access to updates. Parents are
-            warmly encouraged to share photos (with consent) and special moments
-            from home, helping to extend the sense of connection and community
-            that lies at the heart of Wild flowers.
-          </p>
-          <Image
-            src="/RedFlowers.svg"
-            alt="Red flowers decoration"
-            width={63}
-            height={100}
-          />
-        </div>
-      </div>
+
       <Footer />
     </main>
   );

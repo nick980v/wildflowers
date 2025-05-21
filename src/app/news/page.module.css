@@ -1,0 +1,168 @@
+.container {
+    margin-top: 40px;
+    margin-bottom: 3rem;
+  }
+  
+  @media (min-width: 640px) {
+    .container {
+      margin-top: 60px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      margin-top: 80px;
+    }
+  }
+   
+
+  .contentContainer {
+    width: 100%;
+}
+
+  .heading {
+    color: white;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .subHeading {
+    color: white;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .text {
+    color: #FFFCFA;
+    font-size: 18px;
+    line-height: 125%;
+    margin-bottom: 1.5rem;
+    font-style: normal;
+  }
+
+  @media (min-width: 640px) {
+    .heading {
+      font-size: 52px;
+    }
+    .text {
+      font-size: 20px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .heading {
+      font-size: 62px;
+    }
+    .text {
+      font-size: 22px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .heading {
+      font-size: 82.56px;
+    }
+    .subHeading {
+      font-size: 48px
+    }
+    .text {
+      font-size: 24px;
+    }
+  }
+
+  .headshot {
+    aspect-ratio: 3060/3621;
+    border-radius: 40px;
+
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    position: relative;
+  }
+  
+@media (min-width: 640px) {
+    .imageContainer{
+    width: 80%;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .imageContainer{
+    width: 70%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .imageContainer {
+    margin-top: 0;
+    width: auto;
+    max-width: 500px;
+  }
+}
+
+.twoColumnContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 140px;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.column {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .twoColumnContainer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .column:last-child {
+    flex-direction: column;
+  }
+}
+
+.whiteFlower {
+  position: absolute;
+  width: 158px;
+  height: auto;
+  top: -10px;
+  left: -80px;
+  z-index: 2;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .whiteFlower {
+    display: block;
+  }
+}
+
+.blueFlower {
+  position: absolute;
+  width: 325px;
+  height: auto;
+  bottom: -40px;
+  right: -90px;
+  z-index: 2;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .blueFlower {
+    display: block;
+  }
+}
+
+

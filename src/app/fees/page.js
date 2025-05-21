@@ -16,10 +16,10 @@ export default function Fees() {
       <Header />
       <div className={styles.container}>
         <div className={styles.contentContainer}>
-          <h1 className={styles.heading}>Service & fees</h1>
+          <h1 className={styles.heading}>Service & Fees</h1>
           <h1 className={styles.subHeading}>
             Our <span className={styles.headingHighlight}>12-Week</span>{" "}
-            seasonal journey
+            Seasonal Journey
           </h1>
           <p className={styles.text}>
             Each Wild flowers term follows a thoughtfully designed 12-week
@@ -72,10 +72,11 @@ export default function Fees() {
         }}
       >
         <div className="px-4 sm:px-8 md:px-12 lg:px-[168px]">
-          <h1 className={styles.subHeading}>The schedule</h1>
+          <h1 className={styles.subHeading}>The Schedule</h1>
           <p className={styles.text}>
-            Wild flowers runs every Friday, offering two gentle, nature-inspired
-            sessions to suit different routines:
+            Parents are invited to choose one session that best fits their
+            schedule. Wild flowers runs every Friday, offering two gentle,
+            nature-inspired sessions to suit different routines:
           </p>
           <h1 className={styles.sessionText}>
             Morning Session:{" "}
@@ -122,11 +123,14 @@ export default function Fees() {
               </p>
               <p className={styles.text}>
                 You do not need to be enrolled in a Wild flowers session to join
-                us for lunch—this is an open invitation to all in the local
+                us for lunch, this is an open invitation to all in the local
                 community. Everyone is welcome. Come as you are, bring your
-                lunch, and share in the joy of community. Wild flowers is open
-                during school half terms, welcoming families to enjoy seasonal
-                learning and play throughout the year.
+                lunch, and share in the joy of community.
+              </p>
+              <p className={styles.text}>
+                Wild flowers is open during school half terms, welcoming
+                families to enjoy seasonal learning and play throughout the
+                year.
               </p>
               <p className={styles.text}>
                 <span style={{ color: "#9CB7D4" }}>Please note: </span>We take a
@@ -139,13 +143,13 @@ export default function Fees() {
         </div>
       </div>
       <div style={{ marginTop: "3rem" }}>
-        <h1 className={styles.subHeading}>The offer</h1>
+        <h1 className={styles.subHeading}>The Offer</h1>
         <p className={styles.text}>
           Our creative, nature-inspired sessions follow a carefully designed
           12-week program, rooted in the Early Years Foundation Stage (EYFS)
           curriculum. Through hands-on experiences, storytelling, movement, and
           outdoor play, children are encouraged to develop confidence,
-          independence, and a deep love for learning— at their own pace and in
+          independence, and a deep love for learning at their own pace and in
           their own unique way.
         </p>
         <div className={styles.container}>

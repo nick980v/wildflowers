@@ -12,43 +12,43 @@ export const metadata = {
 
 const froebelTimelineItems = [
   {
-    text: "Encouraging free play and self-expression through song storytelling, movement, and natural materials ",
+    text: "Encouraging free play and self-expression through song storytelling, movement, and natural materials.",
   },
   {
-    text: "Creating rhythmic routines that give children a sense of security and belonging",
+    text: "Creating rhythmic routines that give children a sense of security and belonging.",
   },
   {
-    text: 'Offering "gifts" and simple tools that inspire creativity, pattern making, and problem-solving ',
+    text: 'Offering "gifts" and simple tools that inspire creativity, pattern making, and problem-solving.',
   },
   {
-    text: "Embracing the outdoors as a living classroom, where children develop deep relationships with the natural world",
+    text: "Embracing the outdoors as a living classroom, where children develop deep relationships with the natural world.",
   },
   {
-    text: "Valuing community and relationships, where adults gently guide, observe, and support learning",
+    text: "Valuing community and relationships, where adults gently guide, observe, and support learning.",
   },
   {
-    text: "Supporting children\'s spiritual and emotional development through wonder, beauty, and meaningful experiences",
+    text: "Supporting children\'s spiritual and emotional development through wonder, beauty, and meaningful experiences.",
   },
 ];
 
 const montessoriTimelineItems = [
   {
-    text: "Set up our indoor and outdoor spaces to promote independence and choice",
+    text: "Set up our indoor and outdoor spaces to promote independence and choice.",
   },
   {
-    text: "Use real-life tools and materials that are hands-on, beautiful, and purposeful",
+    text: "Use real-life tools and materials that are hands-on, beautiful, and purposeful.",
   },
   {
-    text: "Encourage care of self, others, and the environment from pouring water to tidying up to looking after plants",
+    text: "Encourage care of self, others, and the environment from pouring water to tidying up to looking after plants.",
   },
   {
-    text: "Observe rather than instruct, allowing children to lead their learning",
+    text: "Observe rather than instruct, allowing children to lead their learning.",
   },
   {
-    text: "Foster deep focus and satisfaction through meaningful, repeatable tasks",
+    text: "Foster deep focus and satisfaction through meaningful, repeatable tasks.",
   },
   {
-    text: "Respect the child as a whole person, capable, curious, and full of potential",
+    text: "Respect the child as a whole person, capable, curious, and full of potential.",
   },
 ];
 
@@ -59,7 +59,7 @@ export default function Approach() {
       <div className={styles.container}>
         <div className={styles.contentContainer}>
           <h1 className={styles.heading}>
-            The <span style={{ color: "#92262A" }}>Froebelian</span> approach
+            The <span style={{ color: "#92262A" }}>Froebelian</span> Approach
           </h1>
           <p className={styles.text}>
             Friedrich Froebel (1782–1852), the father of kindergarten, saw
@@ -79,13 +79,13 @@ export default function Approach() {
         />
       </div>
       <h1 className={styles.subHeading} style={{ marginBottom: "3rem" }}>
-        How we honour Froebel&apos;s legacy
+        How We Honour Froebel&apos;s Legacy
       </h1>
       <Timeline timelineItems={froebelTimelineItems} dotColor={"#92262A"} />
       <div className={styles.container}>
         <div className={styles.contentContainer}>
           <h1 className={styles.heading}>
-            The <span style={{ color: "#D9932C" }}>Montessori</span> approach
+            The <span style={{ color: "#D9932C" }}>Montessori</span> Approach
           </h1>
           <p className={styles.text}>
             Maria Montessori (1870–1952), an Italian physician and educator,
@@ -105,13 +105,13 @@ export default function Approach() {
         />
       </div>
       <h1 className={styles.subHeading} style={{ marginBottom: "3rem" }}>
-        How we reflect Montessori&apos;s principles
+        How We Reflect Montessori&apos;s Principles
       </h1>
       <Timeline timelineItems={montessoriTimelineItems} dotColor={"#D9932C"} />
       <div className={styles.container}>
         <div className={styles.contentContainer}>
           <h1 className={styles.subHeading}>
-            A harmonious blend at Wild flowers
+            A Harmonious Blend At Wild Flowers
           </h1>
           <p className={styles.text}>
             By combining these two inspiring approaches, Wild flowers offers
@@ -128,8 +128,8 @@ export default function Approach() {
             </li>
             <li>Engage deeply with nature, materials, and community</li>
             <li>
-              Grow holistically—physically, emotionally, socially, and
-              intellectually{" "}
+              Grow holistically, physically, emotionally, socially, and
+              intellectually
             </li>
           </ul>
           <p className={styles.text}>

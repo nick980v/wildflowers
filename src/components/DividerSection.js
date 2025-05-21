@@ -62,7 +62,7 @@ const StyledDivider = styled(Image)`
 const FlowerGroup = styled(Image)`
   display: none;
   position: absolute;
-  width: 500px;
+  /* width: 500px; */
   height: auto;
   left: 5%;
   top: 50%;
@@ -123,7 +123,7 @@ const DividerSection = () => {
       <FlowerGroup
         src="/Group-flowers.svg"
         alt="Decorative flowers"
-        width={300}
+        width={500}
         height={300}
         priority
       />

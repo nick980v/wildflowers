@@ -1,3 +1,5 @@
+"use client";
+
 import styled from "styled-components";
 import Button from "./Button";
 import Image from "next/image";
