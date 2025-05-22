@@ -154,11 +154,23 @@ const Footer = () => {
           </ContactUsContainer>
           <ContactUsContainer>
             <Image src="/Telephone.svg" alt="Phone" width={20} height={20} />
-            <p style={{ color: "white" }}>(555) 123-4567</p>
+            <a
+              href="tel:+447523598830"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              (+44) 7523598830
+            </a>
           </ContactUsContainer>
           <ContactUsContainer>
             <Image src="/FB.svg" alt="Facebook" width={20} height={20} />
-            <p style={{ color: "white" }}>Wild flowers Community</p>
+            <Link
+              href="https://www.facebook.com/profile.php?id=61575026065913"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "white", textDecoration: "none" }}
+            >
+              Wild flowers Community
+            </Link>
           </ContactUsContainer>
           <ContactUsContainer>
             <Image src="/Insta.svg" alt="Instagram" width={20} height={20} />
