@@ -107,15 +107,26 @@ const Header = () => {
   return (
     <Navbar>
       {/* Logo on the left */}
-      <div className="text-2xl font-semibold">
+      <div>
         <Link href="/">
           <Image
             src="/Logo.svg"
-            alt="Wildflowers Logo"
+            alt="Wild flowers Logo"
             width={279}
             height={37}
             priority
-            style={{ maxWidth: "200px", height: "auto" }}
+            style={{
+              maxWidth: "200px",
+              height: "auto",
+            }}
+          />
+          <Image
+            src="/Slogan.svg"
+            alt="Wild flowers Slogan"
+            width={279}
+            height={37}
+            priority
+            style={{ maxWidth: "200px", height: "auto", marginTop: "1rem" }}
           />
         </Link>
       </div>
