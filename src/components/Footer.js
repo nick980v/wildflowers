@@ -143,6 +143,14 @@ const Footer = () => {
                 News
               </Link>
             </li>
+            <li style={{ marginBottom: "0.5rem" }}>
+              <Link
+                href="/contact#location"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                Location
+              </Link>
+            </li>
           </ul>
         </div>
 

@@ -29,6 +29,7 @@ export default function Contact() {
       {/* Location Section */}
       <div style={{ marginTop: "2rem", maxWidth: 566 }}>
         <h1
+          id="location"
           className={styles.heading}
           style={{ fontSize: 40, marginBottom: 8 }}
         >
