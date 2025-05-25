@@ -99,10 +99,11 @@ export default function Fees() {
           </h1>
           <div className={styles.container}>
             <Image
-              src="/Sunset-homepage.png"
-              alt="Sunset image"
+              src="/GroupOutside.jpg"
+              alt="Outside play"
               width={448}
               height={100}
+              style={{ borderRadius: "2rem" }}
               className={styles.lavender}
             />
             <div className={styles.contentContainer}>
@@ -157,7 +158,7 @@ export default function Fees() {
             <h1 className={styles.subHeading}>Fees</h1>
             <p className={styles.text}>
               Each 2.5 hour Wild flowers session is{" "}
-              <span style={{ color: "#D9932C" }}>£15</span>, and this fee
+              <span style={{ color: "#D9932C" }}>£20</span>, and this fee
               includes all the resources required for an engaging and creative
               experience.
             </p>
@@ -168,7 +169,7 @@ export default function Fees() {
               along with a free welcome pack—which includes a Wild flowers
               drawstring bag, a name tag, a magnifying glass, and many
               surprises! For families who prefer to pay weekly, the welcome pack
-              is available for <span style={{ color: "#D9932C" }}>£10</span>.
+              is available for <span style={{ color: "#D9932C" }}>£15</span>.
             </p>
             <p className={styles.text}>
               Additionally, our lunchtime session is offered at{" "}

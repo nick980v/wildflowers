@@ -70,7 +70,7 @@ export default function Approach() {
           </p>
         </div>
         <Image
-          src="/Sunset-homepage.png"
+          src="/Froebel.jpg"
           alt="Claudine photo"
           className={styles.imageContainer}
           width={684}
@@ -97,8 +97,8 @@ export default function Approach() {
           </p>
         </div>
         <Image
-          src="/Sunset-homepage.png"
-          alt="Claudine photo"
+          src="/Montesorry.jpg"
+          alt="Montesorri photo"
           className={styles.imageContainer}
           width={684}
           height={100}
@@ -111,7 +111,7 @@ export default function Approach() {
       <div className={styles.container}>
         <div className={styles.contentContainer}>
           <h1 className={styles.subHeading}>
-            A Harmonious Blend At Wild Flowers
+            A Harmonious Blend At Wild flowers
           </h1>
           <p className={styles.text}>
             By combining these two inspiring approaches, Wild flowers offers

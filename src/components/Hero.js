@@ -26,7 +26,7 @@ const Container = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 60px;
+    gap: 100px;
   }
 `;
 
@@ -66,7 +66,7 @@ const StyledHeading = styled.h1`
   }
 
   @media (min-width: 1024px) {
-    font-size: 82.56px;
+    font-size: 62px;
   }
 
   span {
@@ -101,7 +101,6 @@ const ButtonContainer = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  width: 100%;
   height: auto;
   margin-top: 40px;
   position: relative;
@@ -161,7 +160,10 @@ const Hero = () => {
       <Container>
         <ContentContainer>
           <StyledHeading>
-            Where <span>Nature</span> Brings <span>Learning</span> To Life!
+            &apos;Nature is the infinite sphere of the child&apos;s
+            development&apos;
+            <br />
+            <span style={{ fontSize: "30px" }}> - Friedrich Froebel</span>
           </StyledHeading>
           <StyledParagraph>
             At Wild flowers, we believe that children thrive when given the
@@ -192,10 +194,11 @@ const Hero = () => {
             priority
           />
           <StyledImage
-            src="/Sunset-homepage.png"
+            src="/ForestImage.png"
             alt="Sunset"
             fill
-            sizes="(min-width: 1024px) 500px, 100vw"
+            sizes="(min-width: 1024px) 700px, 100vw"
+            style={{ borderRadius: "15rem" }}
             priority
           />
         </ImageContainer>

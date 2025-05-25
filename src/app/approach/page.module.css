@@ -68,7 +68,8 @@
     height: auto;
     margin-top: 40px;
     position: relative;
-    aspect-ratio: 684/763;
+    aspect-ratio: 870/580;
+    border-radius: 2rem;
   }
   
 @media (min-width: 640px) {
