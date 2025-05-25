@@ -101,8 +101,8 @@ const ButtonContainer = styled.div`
 `;
 
 const ImageContainer = styled.div`
+  width: 100%;
   height: auto;
-  margin-top: 40px;
   position: relative;
   aspect-ratio: 684/763;
 
@@ -123,7 +123,9 @@ const ImageContainer = styled.div`
 `;
 
 const StyledImage = styled(Image)`
+  border-radius: 15rem;
   object-fit: contain;
+  position: relative;
 `;
 
 const WhiteFlower = styled(Image)`
@@ -195,10 +197,10 @@ const Hero = () => {
           />
           <StyledImage
             src="/ForestImage.png"
-            alt="Sunset"
+            alt="Forest Play"
             fill
             sizes="(min-width: 1024px) 700px, 100vw"
-            style={{ borderRadius: "15rem" }}
+            style={{}}
             priority
           />
         </ImageContainer>

@@ -7,7 +7,6 @@ const DividerContainer = styled.div`
   position: relative;
   width: 100vw;
   margin-left: -16px;
-  margin-top: 60px;
 
   @media (min-width: 640px) {
     margin-left: -32px;
