@@ -5,7 +5,7 @@ import Image from "next/image";
 import Timeline from "@/components/Timeline";
 
 export const metadata = {
-  title: "Our Approach - Wild flowers",
+  title: "Our Approach - Wild flowers Community",
   description:
     "Discover the unique blend of Froebelian and Montessori approaches at Wild flowers community. Learn how we foster child-led, nature-based learning through play, exploration, and purposeful activity.",
 };

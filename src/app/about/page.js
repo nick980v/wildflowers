@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import Image from "next/image";
 
 export const metadata = {
-  title: "About Us - Wild flowers",
+  title: "About Us - Wild flowers Community",
   description:
     "Learn about Wild flowers community, led by experienced practitioner Claudine. Discover our child-led, nature-based approach to early years learning in a nurturing and inclusive environment.",
 };

@@ -4,9 +4,9 @@ import styles from "./page.module.css";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
-  title: "Contact Us - Wild flowers",
+  title: "Contact Us - Wild flowers Community",
   description:
-    "Get in touch with Wild flowers community. Whether you have questions about our early years sessions or want to join, we're here to help.",
+    "Get in touch with Wild flowers community. Whether you have questions about our early years sessions or want to join, we're here to help. We are located at the Scout Hut, at the end of Meads Lane, Wheathampstead",
 };
 
 export default function Contact() {
