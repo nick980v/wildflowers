@@ -170,6 +170,8 @@ const Hero = () => {
           <StyledParagraph>
             At Wild flowers, we believe that children thrive when given the
             freedom to explore, create, and connect with the world around them.
+            Wild flowers is blooming <strong>September 2025</strong>; we
+            can&apos;t wait to welcome you to our community!
           </StyledParagraph>
           <ButtonContainer>
             <Button bgColor="#D9932C" href="/approach">

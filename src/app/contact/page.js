@@ -19,9 +19,15 @@ export default function Contact() {
             Contact <span style={{ color: "#D9932C" }}>Us</span>
           </h1>
           <p className={styles.text}>
-            Whether you have a question, want to learn more about our sessions,
-            or are ready to join the Wild flowers community, we&apos;re here and
-            happy to help.
+            Interested in joining Wild flowers? Whether you have a question,
+            want to learn more about our sessions, or are ready to join the Wild
+            flowers community, we&apos;re here and happy to help.
+          </p>
+          <p className={styles.text}>
+            Contact us to book your{" "}
+            <span style={{ color: "#D9932C" }}>free</span> drop-in taster
+            sessions running from 09:00 - 16:00 on the{" "}
+            <span style={{ color: "#D9932C" }}>15th & 22nd August 2025!</span>
           </p>
         </div>
       </div>
