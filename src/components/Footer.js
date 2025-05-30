@@ -151,6 +151,14 @@ const Footer = () => {
                 Location
               </Link>
             </li>
+            <li style={{ marginBottom: "0.5rem" }}>
+              <Link
+                href="/#FAQs"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                FAQs
+              </Link>
+            </li>
           </ul>
         </div>
 

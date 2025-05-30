@@ -26,7 +26,7 @@ const StyledHeading = styled.h1`
 const FAQS = () => {
   return (
     <Container>
-      <StyledHeading>Frequently Asked Questions (FAQs)</StyledHeading>
+      <StyledHeading id="FAQs">Frequently Asked Questions (FAQs)</StyledHeading>
       <FAQ
         question="What happens if we miss a week?"
         answer="If a family misses a week of Wild flowers, there's no need to worry. We understand that life with little ones can be unpredictable. While we encourage families to attend all 12 sessions to gain the full benefit of the offer, you're always welcome to rejoin when you're ready. For those who've paid in advance, we offer a full refund for any missed session with at least 48 hours' notice, or in cases of extenuating circumstances. Families paying weekly can simply skip that week! We'll also keep you updated through our group chat, so you won't miss important news, reminders, or the opportunity to stay connected with the group during your time away."
