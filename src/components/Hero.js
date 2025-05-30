@@ -77,7 +77,7 @@ const StyledHeading = styled.h1`
 const StyledParagraph = styled.p`
   font-size: 18px;
   color: white;
-  margin-top: 52px;
+  margin-top: 1.5rem;
 
   @media (min-width: 640px) {
     font-size: 20px;
@@ -170,9 +170,15 @@ const Hero = () => {
           <StyledParagraph>
             At Wild flowers, we believe that children thrive when given the
             freedom to explore, create, and connect with the world around them.
-            Wild flowers is blooming <strong>September 2025</strong>; we
-            can&apos;t wait to welcome you to our community!
           </StyledParagraph>
+          <StyledParagraph>
+            Wild flowers is blooming <strong>September 2025</strong>; we
+            can&apos;t wait to welcome you to our community! Contact us to book
+            your <span style={{ color: "#D9932C" }}>free</span> drop-in taster
+            sessions running from 09:00 - 16:00 on the{" "}
+            <span style={{ color: "#D9932C" }}>15th & 22nd August 2025!</span>
+          </StyledParagraph>
+
           <ButtonContainer>
             <Button bgColor="#D9932C" href="/approach">
               Learn More
