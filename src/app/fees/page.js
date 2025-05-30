@@ -160,8 +160,11 @@ export default function Fees() {
               Each 2.5 hour Wild flowers session is{" "}
               <span style={{ color: "#D9932C" }}>£20</span>, and this fee
               includes all the resources required for an engaging and creative
-              experience. Bringing more than one little explorer? Get in touch
-              to find out about our sibling offers!
+              experience.
+            </p>
+            <p className={styles.text}>
+              Bringing more than one little explorer? Get in touch to find out
+              about our sibling offers!
             </p>
             <p className={styles.text}>
               Parents have the flexibility to pay as they go or to prepay
