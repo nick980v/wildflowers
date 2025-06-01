@@ -208,7 +208,6 @@ const Footer = () => {
           padding: "1rem",
           borderTop: "1px solid #D9932C",
           textAlign: "center",
-          opacity: 0.8,
         }}
       >
         <InterestedContainer>
