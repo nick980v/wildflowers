@@ -123,7 +123,6 @@ const ImageContainer = styled.div`
 `;
 
 const StyledImage = styled(Image)`
-  border-radius: 15rem;
   object-fit: contain;
   position: relative;
 `;

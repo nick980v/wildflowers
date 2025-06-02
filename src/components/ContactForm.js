@@ -85,6 +85,19 @@ const StatusMessage = styled.p`
   margin-top: 1rem;
 `;
 
+const PrivacyLink = styled.a`
+  color: #d9932c;
+  text-decoration: underline;
+  font-size: 14px;
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
+
+  &:hover {
+    color: #fffcfa;
+  }
+`;
+
 export default function ContactForm() {
   const [form, setForm] = useState({
     firstName: "",
@@ -203,6 +216,9 @@ export default function ContactForm() {
         <Button type="submit" disabled={isLoading}>
           Send
         </Button>
+        <PrivacyLink href="/privacy-policy">
+          By submitting this form, you agree to our Privacy Policy
+        </PrivacyLink>
       </Form>
     </BorderContainer>
   );
