@@ -63,6 +63,28 @@ const TextArea = styled.textarea`
   resize: vertical;
 `;
 
+const Spinner = styled.div`
+  width: 24px;
+  height: 24px;
+  border: 3px solid #d9932c;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+`;
+
+const StatusMessage = styled.p`
+  color: ${(props) => (props.$error ? "#ff4444" : "#4c6e3d")};
+  text-align: center;
+  margin-top: 1rem;
+`;
+
 export default function ContactForm() {
   const [form, setForm] = useState({
     firstName: "",
@@ -72,31 +94,43 @@ export default function ContactForm() {
     message: "",
   });
   const [status, setStatus] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus("Sending...");
+    setIsLoading(true);
+    setStatus("");
 
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
-    });
-
-    if (res.ok) {
-      setStatus("Sent! Thank you.");
-      setForm({
-        firstName: "",
-        surname: "",
-        email: "",
-        phone: "",
-        message: "",
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
       });
-    } else {
-      setStatus("Error sending message.");
+
+      if (res.ok) {
+        setStatus("Sent! Thank you.");
+        setForm({
+          firstName: "",
+          surname: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        setStatus(
+          "Error sending message. Please email us directly at enquiries@wildflowerscommunity.uk"
+        );
+      }
+    } catch (error) {
+      setStatus(
+        "Error sending message. Please email us directly at enquiries@wildflowerscommunity.uk"
+      );
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -124,6 +158,7 @@ export default function ContactForm() {
             onChange={handleChange}
             placeholder="First name*"
             required
+            disabled={isLoading}
           />
           <Input
             name="surname"
@@ -131,6 +166,7 @@ export default function ContactForm() {
             onChange={handleChange}
             placeholder="Surname*"
             required
+            disabled={isLoading}
           />
           <Input
             name="email"
@@ -139,6 +175,7 @@ export default function ContactForm() {
             placeholder="Email*"
             type="email"
             required
+            disabled={isLoading}
           />
           <Input
             name="phone"
@@ -146,6 +183,7 @@ export default function ContactForm() {
             onChange={handleChange}
             placeholder="Phone"
             type="tel"
+            disabled={isLoading}
           />
         </InputsContainer>
         <TextArea
@@ -154,9 +192,17 @@ export default function ContactForm() {
           onChange={handleChange}
           placeholder="Message*"
           required
+          disabled={isLoading}
         />
-        <Button type="submit">Send</Button>
-        <p>{status}</p>
+        {isLoading && <Spinner />}
+        {status && (
+          <StatusMessage $error={status.includes("Error")}>
+            {status}
+          </StatusMessage>
+        )}
+        <Button type="submit" disabled={isLoading}>
+          Send
+        </Button>
       </Form>
     </BorderContainer>
   );
