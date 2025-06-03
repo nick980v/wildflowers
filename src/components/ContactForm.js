@@ -133,6 +133,11 @@ export default function ContactForm() {
           phone: "",
           message: "",
         });
+        if (typeof window !== "undefined" && window.gtag) {
+          window.gtag("event", "conversion", {
+            send_to: "AW-17139336367/3a6BCNaW2tEaEK-J1uw_", // replace with your actual value
+          });
+        }
       } else {
         setStatus(
           "Error sending message. Please email us directly at enquiries@wildflowerscommunity.uk"
