@@ -16,7 +16,7 @@ export default function Fees() {
       <Header />
       <div className={styles.container}>
         <div className={styles.contentContainer}>
-          <h1 className={styles.heading}>Service & Fees</h1>
+          <h1 className={styles.heading}>Our Offer & Fees</h1>
           <h1 className={styles.subHeading}>
             Our <span className={styles.headingHighlight}>12-Week</span>{" "}
             Seasonal Journey
@@ -143,64 +143,53 @@ export default function Fees() {
           </div>
         </div>
       </div>
-      <div style={{ marginTop: "3rem" }}>
-        <h1 className={styles.subHeading}>The Offer</h1>
-        <p className={styles.text}>
-          Our creative, nature-inspired sessions follow a carefully designed
-          12-week program, rooted in the Early Years Foundation Stage (EYFS)
-          curriculum. Through hands-on experiences, storytelling, movement, and
-          outdoor play, children are encouraged to develop confidence,
-          independence, and a deep love for learning at their own pace and in
-          their own unique way.
-        </p>
-        <div className={styles.container}>
-          <div>
-            <h1 className={styles.subHeading}>Fees</h1>
-            <p className={styles.text}>
-              Each 2.5 hour Wild flowers session is{" "}
-              <span style={{ color: "#D9932C" }}>£15</span>, and this fee
-              includes all the resources required for an engaging and creative
-              experience. Adults attend for free, making it a wonderful
-              opportunity to connect, play, and explore alongside your child.
-            </p>
-            <p className={styles.text}>
-              Bringing more than one little explorer? Get in touch to find out
-              about our sibling offers!
-            </p>
-            <p className={styles.text}>
-              Parents have the flexibility to pay as they go or to prepay
-              sessions upfront. If you choose the prepayment option, you&apos;ll
-              receive a <span style={{ color: "#D9932C" }}>10% discount</span>{" "}
-              along with a free welcome pack—which includes a Wild flowers
-              drawstring bag, a name tag, a magnifying glass, and many
-              surprises! For families who prefer to pay weekly, the welcome pack
-              is available for <span style={{ color: "#D9932C" }}>£15</span>.
-            </p>
-            <p className={styles.text}>
-              Additionally, our lunchtime session is offered at{" "}
-              <span style={{ color: "#D9932C" }}>£5</span> per child, providing
-              a wonderful opportunity for extra community connection
-            </p>
-            <p className={styles.text}>
-              For queries relating to fees and payment, please get in touch
-              using the details provided on our{" "}
-              <Link
-                href="/contact"
-                style={{ color: "#D9932C", textDecoration: "none" }}
-              >
-                &apos;Contact Us&apos;
-              </Link>{" "}
-              page.
-            </p>
-          </div>
-          <Image
-            src="/Fees-flowers.svg"
-            alt="Fees flowers"
-            width={400}
-            height={100}
-            className={styles.lavender}
-          />
+      <div className={styles.container}>
+        <div>
+          <h1 className={styles.subHeading}>Fees</h1>
+          <p className={styles.text}>
+            Each 2.5 hour Wild flowers session is{" "}
+            <span style={{ color: "#D9932C" }}>£15</span>, and this fee includes
+            all the resources required for an engaging and creative experience.
+            Adults attend for free, making it a wonderful opportunity to
+            connect, play, and explore alongside your child.
+          </p>
+          <p className={styles.text}>
+            Bringing more than one little explorer? Get in touch to find out
+            about our sibling offers!
+          </p>
+          <p className={styles.text}>
+            Parents have the flexibility to pay as they go or to prepay sessions
+            upfront. If you choose the prepayment option, you&apos;ll receive a{" "}
+            <span style={{ color: "#D9932C" }}>10% discount</span> along with a
+            free welcome pack—which includes a Wild flowers drawstring bag, a
+            name tag, a magnifying glass, and many surprises! For families who
+            prefer to pay weekly, the welcome pack is available for{" "}
+            <span style={{ color: "#D9932C" }}>£15</span>.
+          </p>
+          <p className={styles.text}>
+            Additionally, our lunchtime session is offered at{" "}
+            <span style={{ color: "#D9932C" }}>£5</span> per child, providing a
+            wonderful opportunity for extra community connection
+          </p>
+          <p className={styles.text}>
+            For queries relating to fees and payment, please get in touch using
+            the details provided on our{" "}
+            <Link
+              href="/contact"
+              style={{ color: "#D9932C", textDecoration: "none" }}
+            >
+              &apos;Contact Us&apos;
+            </Link>{" "}
+            page.
+          </p>
         </div>
+        <Image
+          src="/Fees-flowers.svg"
+          alt="Fees flowers"
+          width={400}
+          height={100}
+          className={styles.lavender}
+        />
       </div>
       <Footer />
     </main>

@@ -16,7 +16,7 @@ export default function About() {
       <div className={styles.container}>
         <div className={styles.contentContainer}>
           <h1 className={styles.heading}>
-            About <span style={{ color: "#D9932C" }}>Us</span>
+            Meet <span style={{ color: "#D9932C" }}>Us</span>
           </h1>
           <p className={styles.text}>
             Claudine is the heart behind Wild flowers – a passionate and

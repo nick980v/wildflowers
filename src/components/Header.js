@@ -144,13 +144,13 @@ const Header = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink href="/about" $isActive={pathname === "/about"}>
-            <NavHeading>About</NavHeading>
+          <NavLink href="/fees" $isActive={pathname === "/fees"}>
+            <NavHeading>Our Offer & Fees</NavHeading>
           </NavLink>
         </li>
         <li>
-          <NavLink href="/fees" $isActive={pathname === "/fees"}>
-            <NavHeading>Service & Fees</NavHeading>
+          <NavLink href="/about" $isActive={pathname === "/about"}>
+            <NavHeading>Meet Us</NavHeading>
           </NavLink>
         </li>
         <li>
@@ -181,20 +181,20 @@ const Header = () => {
           <NavHeading>Our Approach</NavHeading>
         </NavLink>
         <NavLink
-          href="/about"
-          $isActive={pathname === "/about"}
-          $isMobile={true}
-          onClick={() => setIsMenuOpen(false)}
-        >
-          <NavHeading>About</NavHeading>
-        </NavLink>
-        <NavLink
           href="/fees"
           $isActive={pathname === "/fees"}
           $isMobile={true}
           onClick={() => setIsMenuOpen(false)}
         >
-          <NavHeading>Service & fees</NavHeading>
+          <NavHeading>Our Offer & Fees</NavHeading>
+        </NavLink>
+        <NavLink
+          href="/about"
+          $isActive={pathname === "/about"}
+          $isMobile={true}
+          onClick={() => setIsMenuOpen(false)}
+        >
+          <NavHeading>Meet Us</NavHeading>
         </NavLink>
         <NavLink
           href="/news"
