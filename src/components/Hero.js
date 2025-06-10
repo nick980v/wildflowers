@@ -171,7 +171,7 @@ const Hero = () => {
             freedom to explore, create, and connect with the world around them.
           </StyledParagraph>
           <StyledParagraph>
-            Wild flowers is blooming <strong>September 2025</strong>; we
+            Wild flowers is blooming <strong>19th September 2025</strong>; we
             can&apos;t wait to welcome you to our community! Contact us to book
             your <span style={{ color: "#D9932C" }}>free</span> drop-in taster
             sessions running from 09:00 - 16:00 on the{" "}

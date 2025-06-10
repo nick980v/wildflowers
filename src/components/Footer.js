@@ -116,7 +116,7 @@ const Footer = () => {
                 href="/fees"
                 style={{ color: "white", textDecoration: "none" }}
               >
-                Services & Fees
+                Our Offer & Fees
               </Link>
             </li>
             <li style={{ marginBottom: "0.5rem" }}>
@@ -124,15 +124,7 @@ const Footer = () => {
                 href="/about"
                 style={{ color: "white", textDecoration: "none" }}
               >
-                About
-              </Link>
-            </li>
-            <li style={{ marginBottom: "0.5rem" }}>
-              <Link
-                href="/gallery"
-                style={{ color: "white", textDecoration: "none" }}
-              >
-                Gallery
+                Meet Us
               </Link>
             </li>
             <li style={{ marginBottom: "0.5rem" }}>
@@ -141,6 +133,14 @@ const Footer = () => {
                 style={{ color: "white", textDecoration: "none" }}
               >
                 News
+              </Link>
+            </li>
+            <li style={{ marginBottom: "0.5rem" }}>
+              <Link
+                href="/gallery"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                Gallery
               </Link>
             </li>
             <li style={{ marginBottom: "0.5rem" }}>
