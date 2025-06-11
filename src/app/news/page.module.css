@@ -1,6 +1,7 @@
 .container {
     margin-top: 40px;
     margin-bottom: 3rem;
+    width: 100%;
   }
   
   @media (min-width: 640px) {
@@ -25,25 +26,22 @@
     font-size: 42px;
     font-style: normal;
     font-weight: 900;
-    line-height: 110%;
+    line-height: 1.2;
     height: auto;
     margin-bottom: 2rem;
   }
 
   .subHeading {
     color: white;
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 110%;
-    height: auto;
+    font-size: 32px;
+    font-weight: 700;
     margin-bottom: 1rem;
   }
 
   .text {
-    color: #FFFCFA;
+    color: white;
     font-size: 18px;
-    line-height: 125%;
+    line-height: 1.6;
     margin-bottom: 1.5rem;
     font-style: normal;
   }
@@ -112,25 +110,20 @@
 }
 
 .twoColumnContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 140px;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  .twoColumnContainer {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .column {
-  flex: 1;
-}
-
-@media (max-width: 768px) {
-  .twoColumnContainer {
-    flex-direction: column;
-    gap: 2rem;
-  }
-  .column:last-child {
-    flex-direction: column;
-  }
+  position: relative;
 }
 
 .whiteFlower {
@@ -163,6 +156,11 @@
   .blueFlower {
     display: block;
   }
+}
+
+.calendarSection {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 

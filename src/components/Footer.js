@@ -132,7 +132,7 @@ const Footer = () => {
                 href="/news"
                 style={{ color: "white", textDecoration: "none" }}
               >
-                News
+                What&apos;s On
               </Link>
             </li>
             <li style={{ marginBottom: "0.5rem" }}>

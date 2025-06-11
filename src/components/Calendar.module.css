@@ -1,0 +1,243 @@
+.calendarContainer *,
+.calendarContainer *::before,
+.calendarContainer *::after {
+  box-sizing: border-box;
+}
+
+.calendarContainer {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.monthYear {
+  font-size: 24px;
+  font-weight: 600;
+  color: #062F21;
+}
+
+.navigationButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #D9932C;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.navigationButton:hover {
+  background-color: rgba(217, 147, 44, 0.1);
+}
+
+.weekDays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: 600;
+  color: #4C6E3D;
+  font-size: 14px;
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.day {
+  padding: 2px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  position: relative;
+  min-height: 120px;
+}
+
+.emptyDay {
+}
+
+.hasSessions {
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  background-color: #4C6E3D;
+}
+
+.hasSessions .dayNumber {
+  color: white;
+}
+
+.hasSessions:hover {
+  background-color: #e0e0e0; /* A lighter shade for hover effect */
+}
+
+.dayNumber {
+  font-size: 16px;
+  font-weight: 600;
+  color: #062F21;
+}
+
+.sessions {
+  margin-top: 5px; /* Adjusted margin */
+  display: flex;
+  flex-direction: column;
+  gap: 2px; /* Adjusted gap */
+}
+
+.sessionCompact {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1px 2px; /* Adjusted padding */
+  border-radius: 3px; /* Adjusted border-radius */
+  font-size: 8px; /* Adjusted font size */
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sessionTimeCompact {
+  display: block;
+  color: #D9932C;
+  font-weight: 600;
+  font-size: 8px; /* Adjusted font size */
+}
+
+.sessionModal {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100; /* Increased z-index to ensure it's on top */
+  top: 50%; /* Position on top of the date */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the modal */
+  width: 250px; /* Increased width for readability */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  white-space: normal;
+  box-sizing: border-box;
+}
+
+.modalDate {
+  font-size: 14px;
+  font-weight: 700;
+  color: #062F21;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.session {
+  background-color: #f0f0f0;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sessionTime {
+  display: block;
+  color: #D9932C;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.sessionType {
+  display: block;
+  color: #062F21;
+  font-size: 12px;
+}
+
+.sessionNotes {
+  display: block;
+  color: #555; /* A slightly darker color for notes */
+  font-size: 11px;
+  margin-top: 5px; /* Add some space above the notes */
+  font-style: italic;
+  white-space: normal; /* Allow notes to wrap */
+}
+
+.compactSessions {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d9932c;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .calendarContainer {
+    padding: 16px;
+  }
+
+  .day {
+    min-height: 80px;
+  }
+
+  .sessions {
+    margin-top: 3px;
+    gap: 1px;
+  }
+
+  .sessionCompact {
+    padding: 1px 1px;
+    font-size: 7px;
+  }
+
+  .sessionTimeCompact {
+    font-size: 7px;
+  }
+
+  .sessionModal {
+    width: 180px; /* Adjusted width for mobile */
+    padding: 8px;
+    gap: 6px;
+  }
+
+  .modalDate {
+    font-size: 12px;
+  }
+
+  .session {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+
+  .sessionTime {
+    font-size: 11px;
+  }
+
+  .sessionType {
+    font-size: 10px;
+  }
+
+  .sessionNotes {
+    font-size: 9px;
+    margin-top: 3px;
+  }
+
+  .compactSessions {
+    font-size: 8px;
+    padding: 1px 3px;
+  }
+} 
