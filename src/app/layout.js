@@ -2,6 +2,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Script from "next/script";
+import SchemaMarkup from "@/components/SchemaMarkup";
 
 export const metadata = {
   title: "Wild flowers Community",
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
             gtag('config', 'AW-17139336367');
           `}
         </Script>
+        <SchemaMarkup />
       </head>
       <Analytics />
       <SpeedInsights />
