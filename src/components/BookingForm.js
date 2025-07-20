@@ -62,9 +62,7 @@ const Label = styled.label`
 const CheckboxLabel = styled.label`
   color: #fffcfa;
   font-size: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  display: block;
   margin-bottom: 0.5rem;
 `;
 const RadioGroup = styled.div`
@@ -81,7 +79,6 @@ const PrivacyLink = styled.a`
   color: #d9932c;
   text-decoration: underline;
   font-size: 14px;
-  display: block;
   text-align: center;
   &:hover {
     color: #fffcfa;
@@ -776,11 +773,13 @@ export default function BookingForm({ sheetData = [] }) {
             required
             disabled={isLoading}
           />
-          I confirm I have read and agree to the{" "}
-          <PrivacyLink href="/privacy-policy" target="_blank">
-            privacy policy
-          </PrivacyLink>{" "}
-          and terms.
+          <span style={{ marginLeft: "8px" }}>
+            I confirm I have read and agree to the{" "}
+            <PrivacyLink href="/privacy-policy" target="_blank">
+              privacy policy
+            </PrivacyLink>{" "}
+            and terms.
+          </span>
         </CheckboxLabel>
         {errors.agree && <ErrorText>{errors.agree}</ErrorText>}
         {status && (
