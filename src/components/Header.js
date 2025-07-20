@@ -164,6 +164,11 @@ const Header = () => {
           </NavLink>
         </li>
         <li>
+          <NavLink href="/join-us" $isActive={pathname === "/join-us"}>
+            <NavHeading>Join Us</NavHeading>
+          </NavLink>
+        </li>
+        <li>
           <NavLink href="/contact" $isActive={pathname === "/contact"}>
             <NavHeading>Contact</NavHeading>
           </NavLink>
@@ -211,6 +216,14 @@ const Header = () => {
           onClick={() => setIsMenuOpen(false)}
         >
           <NavHeading>Gallery</NavHeading>
+        </NavLink>
+        <NavLink
+          href="/join-us"
+          $isActive={pathname === "/join-us"}
+          $isMobile={true}
+          onClick={() => setIsMenuOpen(false)}
+        >
+          <NavHeading>Join Us</NavHeading>
         </NavLink>
         <NavLink
           href="/contact"

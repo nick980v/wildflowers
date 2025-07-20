@@ -108,19 +108,13 @@ export default function Fees() {
             />
             <div className={styles.contentContainer}>
               <p className={styles.text}>
-                Join us for our warm and welcoming lunchtime gathering, a
-                relaxed and social space for families to come together, share
-                food, and connect. This is a time to pause, enjoy one
-                another&apos;s company, and build a sense of belonging within
-                the community. We provide wholesome, nourishing snacks, and
-                you&apos;re welcome to bring your own lunch to enjoy alongside
-                others.
-              </p>
-              <p className={styles.text}>
-                During the lunchtime session, children can enjoy outdoor play,
-                nature exploration, child-led play indoors, and a cosy story
-                time, creating a gentle rhythm to the day while supporting
-                natural curiosity and connection.
+                Additionally, Wild flowers welcomes you to join us for a gentle
+                and welcoming lunchtime session, where families can come
+                together to share food, conversation, and connection. We provide
+                wholesome, nourishing snacks, and please bring your own lunch to
+                enjoy alongside others. During the lunchtime session, children
+                can enjoy outdoor play, nature exploration, child-led play
+                indoors, and a cosy story time.
               </p>
               <p className={styles.text}>
                 You do not need to be enrolled in a Wild flowers session to join
@@ -161,7 +155,7 @@ export default function Fees() {
             Parents have the flexibility to pay as they go or to prepay sessions
             upfront. If you choose the prepayment option, you&apos;ll receive a{" "}
             <span style={{ color: "#D9932C" }}>10% discount</span> along with a
-            free welcome pack—which includes a Wild flowers drawstring bag, a
+            free welcome pack, which includes a Wild flowers drawstring bag, a
             name tag, a magnifying glass, and many surprises! For families who
             prefer to pay weekly, the welcome pack is available for{" "}
             <span style={{ color: "#D9932C" }}>£15</span>.
