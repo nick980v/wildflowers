@@ -613,7 +613,7 @@ export default function BookingForm({ sheetData = [] }) {
         )}
 
         {/* 4. Medical and Allergy Info */}
-        <SectionHeading>Medical and Allergy Info</SectionHeading>
+        <SectionHeading>Medical and Allergy Information</SectionHeading>
         <CheckboxLabel>
           <input
             type="checkbox"
