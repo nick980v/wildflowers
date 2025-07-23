@@ -85,6 +85,18 @@ const PrivacyLink = styled.a`
   }
 `;
 
+const BookingTypeDescription = styled.span`
+  font-size: 0.98em;
+  color: #d9932c;
+  margin-left: 24px;
+  display: inline;
+  @media (max-width: 600px) {
+    display: block;
+    margin-left: 0;
+    margin-top: 0.25em;
+  }
+`;
+
 const initialForm = {
   // Child Info
   childFullName: "",
@@ -496,12 +508,10 @@ export default function BookingForm({ sheetData = [] }) {
               />
               <strong>Full-Term Booking</strong>
             </span>
-            <span
-              style={{ fontSize: "0.98em", color: "#d9932c", marginLeft: 24 }}
-            >
-              Book and pay upfront for the full term — includes a 10% discount
+            <BookingTypeDescription>
+              Book and pay upfront for the full term - includes a 10% discount
               and a free welcome pack.
-            </span>
+            </BookingTypeDescription>
           </CheckboxLabel>
           {/* Weekly Booking */}
           <CheckboxLabel
@@ -519,12 +529,10 @@ export default function BookingForm({ sheetData = [] }) {
               />
               <strong>Weekly Booking (Pay-as-you-go)</strong>
             </span>
-            <span
-              style={{ fontSize: "0.98em", color: "#d9932c", marginLeft: 24 }}
-            >
+            <BookingTypeDescription>
               Attend regularly each week, but pay each time instead of all at
               once.
-            </span>
+            </BookingTypeDescription>
           </CheckboxLabel>
           {/* One-Off Booking */}
           <CheckboxLabel
@@ -542,11 +550,9 @@ export default function BookingForm({ sheetData = [] }) {
               />
               <strong>One-Off Booking</strong>
             </span>
-            <span
-              style={{ fontSize: "0.98em", color: "#d9932c", marginLeft: 24 }}
-            >
+            <BookingTypeDescription>
               Book and pay for individual Fridays when you’re available.
-            </span>
+            </BookingTypeDescription>
           </CheckboxLabel>
         </RadioGroup>
         {errors.bookingType && <ErrorText>{errors.bookingType}</ErrorText>}
