@@ -15,6 +15,8 @@ export async function POST(request) {
       <p><strong>Preferred Name:</strong> ${form.childPreferredName || ""}</p>
       <p><strong>Date of Birth:</strong> ${form.childDOB || ""}</p>
       <p><strong>Home Address:</strong> ${form.childAddress || ""}</p>
+      <p><strong>Siblings Joining:</strong> ${form.hasSiblings ? "Yes" : "No"}</p>
+      <p><strong>Siblings Details:</strong> ${form.siblingsDetails || ""}</p>
       <h3>Parent/Carer Information</h3>
       <p><strong>Full Name:</strong> ${form.parentFullName || ""}</p>
       <p><strong>Relationship to Child:</strong> ${form.parentRelationship || ""}</p>
@@ -41,10 +43,11 @@ export async function POST(request) {
       <p><strong>Medication Details:</strong> ${form.medication || ""}</p>
       <h3>Permissions</h3>
       <p><strong>Photo Consent:</strong> ${form.photoConsent || ""}</p>
+      <p><strong>WhatsApp Group Opt-in:</strong> ${form.whatsappGroup || ""}</p>
       <h3>Additional Notes and Consent</h3>
       <p><strong>Additional Notes:</strong> ${form.additionalNotes || ""}</p>
       <p><strong>Digital Signature:</strong> ${form.digitalSignature || ""}</p>
-      <p><strong>Date Signed:</strong> ${form.signatureDate || ""}</p>
+      <p><strong>Date Signed:</strong> ${new Date().toLocaleDateString()}</p>
       <p><strong>Agreed to Privacy Policy and Terms:</strong> ${form.agree ? "Yes" : "No"}</p>
     `;
 

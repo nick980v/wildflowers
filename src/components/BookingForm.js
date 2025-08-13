@@ -103,6 +103,8 @@ const initialForm = {
   childPreferredName: "",
   childDOB: "",
   childAddress: "",
+  hasSiblings: false,
+  siblingsDetails: "",
   // Parent/Carer Info
   parentFullName: "",
   parentRelationship: "",
@@ -129,10 +131,10 @@ const initialForm = {
   medication: "",
   // Permissions
   photoConsent: "",
+  whatsappGroup: "",
   // Additional
   additionalNotes: "",
   digitalSignature: "",
-  signatureDate: "",
   agree: false,
 };
 
@@ -214,14 +216,15 @@ export default function BookingForm({ sheetData = [] }) {
     if (!form.sessionFridayAM && !form.sessionLunch && !form.sessionFridayPM)
       newErrors.session = "Select at least one session";
     if (!form.bookingType) newErrors.bookingType = "Required";
-    if (!form.starterPack) newErrors.starterPack = "Required";
+    if (form.bookingType !== "Full-Term" && !form.starterPack)
+      newErrors.starterPack = "Required";
     if (form.bookingType === "One-Off" && !form.oneOffDate)
       newErrors.oneOffDate = "Select a date";
     // Permissions
     if (!form.photoConsent) newErrors.photoConsent = "Required";
     // Additional
     if (!form.digitalSignature.trim()) newErrors.digitalSignature = "Required";
-    if (!form.signatureDate) newErrors.signatureDate = "Required";
+    // signature date is auto-set on server
     if (!form.agree)
       newErrors.agree = "You must agree to the privacy policy and terms";
     // Medical/Allergy
@@ -231,6 +234,9 @@ export default function BookingForm({ sheetData = [] }) {
       newErrors.medical = "Please specify";
     if (form.hasMedication && !form.medication.trim())
       newErrors.medication = "Please specify";
+    // Siblings
+    if (form.hasSiblings && !form.siblingsDetails.trim())
+      newErrors.siblingsDetails = "Please provide sibling(s) info";
     return newErrors;
   };
 
@@ -329,7 +335,7 @@ export default function BookingForm({ sheetData = [] }) {
             Home Address
             <TextArea
               name="childAddress"
-              value={form.childAddress}
+              value={form.childAddress || ""}
               onChange={handleChange}
               required
               disabled={isLoading}
@@ -340,6 +346,35 @@ export default function BookingForm({ sheetData = [] }) {
             )}
           </Label>
         </InputsRow>
+
+        {/* Siblings Attending */}
+        <SectionHeading>Siblings Attending</SectionHeading>
+        <CheckboxLabel>
+          <input
+            type="checkbox"
+            name="hasSiblings"
+            checked={form.hasSiblings}
+            onChange={handleChange}
+            disabled={isLoading}
+          />
+          Any siblings joining?
+        </CheckboxLabel>
+        {form.hasSiblings && (
+          <Label>
+            Please provide sibling names and ages
+            <TextArea
+              name="siblingsDetails"
+              value={form.siblingsDetails || ""}
+              onChange={handleChange}
+              required={form.hasSiblings}
+              disabled={isLoading}
+              placeholder="e.g. Sam (6), Alex (4)"
+            />
+            {errors.siblingsDetails && (
+              <ErrorText>{errors.siblingsDetails}</ErrorText>
+            )}
+          </Label>
+        )}
 
         {/* 2. Parent/Carer Information */}
         <SectionHeading>Parent/Carer Information</SectionHeading>
@@ -510,7 +545,8 @@ export default function BookingForm({ sheetData = [] }) {
             </span>
             <BookingTypeDescription>
               Book and pay upfront for the full term - includes a 10% discount
-              and a free welcome pack.
+              and a free welcome pack (includes a drawstring bag, name badge,
+              and a Wild flowers t-shirt).
             </BookingTypeDescription>
           </CheckboxLabel>
           {/* Weekly Booking */}
@@ -558,9 +594,9 @@ export default function BookingForm({ sheetData = [] }) {
         {errors.bookingType && <ErrorText>{errors.bookingType}</ErrorText>}
         {form.bookingType !== "Full-Term" && (
           <>
-            <Label>Order Starter Pack (£15)?</Label>
+            <Label>Order Welcome Pack (£20)?</Label>
             <span style={{ fontSize: "0.98em", color: "#d9932c" }}>
-              Includes a drawstring bag, name badge, and welcome booklet.
+              Includes a drawstring bag, name badge and a Wild flowers t-shirt.
             </span>
             <RadioGroup>
               <CheckboxLabel>
@@ -629,7 +665,7 @@ export default function BookingForm({ sheetData = [] }) {
             Please specify
             <TextArea
               name="allergies"
-              value={form.allergies}
+              value={form.allergies || ""}
               onChange={handleChange}
               required={form.hasAllergies}
               disabled={isLoading}
@@ -653,7 +689,7 @@ export default function BookingForm({ sheetData = [] }) {
             Please specify
             <TextArea
               name="medical"
-              value={form.medical}
+              value={form.medical || ""}
               onChange={handleChange}
               required={form.hasMedical}
               disabled={isLoading}
@@ -677,7 +713,7 @@ export default function BookingForm({ sheetData = [] }) {
             Please specify
             <TextArea
               name="medication"
-              value={form.medication}
+              value={form.medication || ""}
               onChange={handleChange}
               required={form.hasMedication}
               disabled={isLoading}
@@ -726,6 +762,34 @@ export default function BookingForm({ sheetData = [] }) {
           </CheckboxLabel>
         </RadioGroup>
         {errors.photoConsent && <ErrorText>{errors.photoConsent}</ErrorText>}
+        <Label>
+          Would you like to be part of our Wild flowers Community WhatsApp
+          group?
+        </Label>
+        <RadioGroup>
+          <CheckboxLabel>
+            <input
+              type="radio"
+              name="whatsappGroup"
+              value="Yes"
+              checked={form.whatsappGroup === "Yes"}
+              onChange={handleChange}
+              disabled={isLoading}
+            />
+            Yes
+          </CheckboxLabel>
+          <CheckboxLabel>
+            <input
+              type="radio"
+              name="whatsappGroup"
+              value="No"
+              checked={form.whatsappGroup === "No"}
+              onChange={handleChange}
+              disabled={isLoading}
+            />
+            No
+          </CheckboxLabel>
+        </RadioGroup>
 
         {/* 6. Additional Notes and Consent */}
         <SectionHeading>Additional Notes and Consent</SectionHeading>
@@ -733,43 +797,26 @@ export default function BookingForm({ sheetData = [] }) {
           Additional notes or questions
           <TextArea
             name="additionalNotes"
-            value={form.additionalNotes}
+            value={form.additionalNotes || ""}
             onChange={handleChange}
             disabled={isLoading}
             placeholder="Any additional notes or questions? (optional)"
           />
         </Label>
-        <InputsRow>
-          <Label style={{ flex: 2 }}>
-            Full name (digital signature)
-            <Input
-              name="digitalSignature"
-              value={form.digitalSignature}
-              onChange={handleChange}
-              required
-              disabled={isLoading}
-              placeholder="Full name (digital signature)*"
-            />
-            {errors.digitalSignature && (
-              <ErrorText>{errors.digitalSignature}</ErrorText>
-            )}
-          </Label>
-          <Label style={{ flex: 1 }}>
-            Date
-            <Input
-              type="date"
-              name="signatureDate"
-              value={form.signatureDate}
-              onChange={handleChange}
-              required
-              disabled={isLoading}
-              placeholder="Today's date*"
-            />
-            {errors.signatureDate && (
-              <ErrorText>{errors.signatureDate}</ErrorText>
-            )}
-          </Label>
-        </InputsRow>
+        <Label>
+          Full name (digital signature)
+          <Input
+            name="digitalSignature"
+            value={form.digitalSignature}
+            onChange={handleChange}
+            required
+            disabled={isLoading}
+            placeholder="Full name (digital signature)*"
+          />
+          {errors.digitalSignature && (
+            <ErrorText>{errors.digitalSignature}</ErrorText>
+          )}
+        </Label>
         <CheckboxLabel>
           <input
             type="checkbox"

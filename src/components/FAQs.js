@@ -39,6 +39,10 @@ const FAQS = () => {
         question="Are the sessions adaptable for all ages?"
         answer="Absolutely! Wild flowers sessions are thoughtfully designed to suit a wide age range, from babies as young as 6 months up to children aged 5 years. Each activity is flexible and can be adapted to meet your child's individual stage of development and interests. Whether your little one is crawling, toddling, or ready to take on more structured play, there's space for them to engage at their own pace. We believe in child-led learning, so each session naturally accommodates different abilities, making sure every child feels included, supported, and inspired."
       />
+      <FAQ
+        question="Is Wild flowers open during half term?"
+        answer="Yes! Wild flowers is open during school half terms, welcoming families to enjoy seasonal learning and play throughout the year. We take a break during the Christmas, Easter, and summer holidays to rest, reflect, and prepare for the next chapter of our journey together."
+      />
     </Container>
   );
 };
