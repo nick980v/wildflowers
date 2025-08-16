@@ -147,14 +147,20 @@ export default function Fees() {
             about our sibling offers!
           </p>
           <p className={styles.text}>
-            Parents have the flexibility to pay as they go or to prepay sessions
-            upfront. If you choose the prepayment option, you&apos;ll receive a{" "}
-            <span style={{ color: "#D9932C" }}>10% discount</span> along with a
-            free welcome pack, which includes a Wild flowers drawstring bag, a
-            name tag and a Wild flowers t-shirt! For families who prefer to pay
-            weekly, the welcome pack is available for{" "}
-            <span style={{ color: "#D9932C" }}>£20</span>.
+            Parents can choose the plan that works best for them:
+            <br />
+            <br />
+            <span style={{ color: "#D9932C" }}>Full Term Upfront</span> - Pay
+            for the full term (12 sessions) in advance and receive a{" "}
+            <span style={{ color: "#D9932C" }}>10% discount</span> plus a free
+            welcome pack (including a Wild flowers drawstring bag, name tag, and
+            Wild flowers t-shirt).
+            <br />
+            <br />
+            <span style={{ color: "#D9932C" }}>Half-Termly Payments</span> - Pay
+            in two instalments of 6 sessions each across the term.
           </p>
+
           <p className={styles.text}>
             Additionally, our lunchtime session is offered at{" "}
             <span style={{ color: "#D9932C" }}>£5</span> per family, providing a

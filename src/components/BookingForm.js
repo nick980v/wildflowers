@@ -218,8 +218,9 @@ export default function BookingForm({ sheetData = [] }) {
     if (!form.bookingType) newErrors.bookingType = "Required";
     if (form.bookingType !== "Full-Term" && !form.starterPack)
       newErrors.starterPack = "Required";
-    if (form.bookingType === "One-Off" && !form.oneOffDate)
-      newErrors.oneOffDate = "Select a date";
+    // Add below when adding one-off booking again
+    // if (form.bookingType === "One-Off" && !form.oneOffDate)
+    //   newErrors.oneOffDate = "Select a date";
     // Permissions
     if (!form.photoConsent) newErrors.photoConsent = "Required";
     // Additional
@@ -544,12 +545,13 @@ export default function BookingForm({ sheetData = [] }) {
               <strong>Full-Term Booking</strong>
             </span>
             <BookingTypeDescription>
-              Book and pay upfront for the full term - includes a 10% discount
-              and a free welcome pack (includes a drawstring bag, name badge,
-              and a Wild flowers t-shirt).
+              Book and pay upfront for the full term (12 sessions) - includes a
+              10% discount and a free welcome pack (includes a drawstring bag,
+              name badge, and a Wild flowers t-shirt). Fee: £162. Please be
+              aware the half-term session is not included.
             </BookingTypeDescription>
           </CheckboxLabel>
-          {/* Weekly Booking */}
+          {/* Half-Termly Booking */}
           <CheckboxLabel
             style={{ alignItems: "flex-start", flexDirection: "column" }}
           >
@@ -557,17 +559,17 @@ export default function BookingForm({ sheetData = [] }) {
               <input
                 type="radio"
                 name="bookingType"
-                value="Weekly"
-                checked={form.bookingType === "Weekly"}
+                value="Half-Termly"
+                checked={form.bookingType === "Half-Termly"}
                 onChange={handleChange}
                 disabled={isLoading}
                 style={{ marginRight: 8 }}
               />
-              <strong>Weekly Booking (Pay-as-you-go)</strong>
+              <strong>Half-Termly Booking</strong>
             </span>
             <BookingTypeDescription>
-              Attend regularly each week, but pay each time instead of all at
-              once.
+              Pay in two instalments of 6 sessions: £90 per instalment. Please
+              be aware the half-term session is not included.
             </BookingTypeDescription>
           </CheckboxLabel>
           {/* One-Off Booking */}
@@ -587,7 +589,7 @@ export default function BookingForm({ sheetData = [] }) {
               <strong>One-Off Booking</strong>
             </span>
             <BookingTypeDescription>
-              Book and pay for individual Fridays when you’re available.
+              Only available for half-term sessions
             </BookingTypeDescription>
           </CheckboxLabel>
         </RadioGroup>
@@ -625,7 +627,8 @@ export default function BookingForm({ sheetData = [] }) {
             {errors.starterPack && <ErrorText>{errors.starterPack}</ErrorText>}
           </>
         )}
-        {form.bookingType === "One-Off" && (
+        {/* Introduce when doing single bookings again */}
+        {/* {form.bookingType === "One-Off" && (
           <Label>
             Select Friday for One-Off Booking
             <Input
@@ -646,7 +649,7 @@ export default function BookingForm({ sheetData = [] }) {
             </Input>
             {errors.oneOffDate && <ErrorText>{errors.oneOffDate}</ErrorText>}
           </Label>
-        )}
+        )} */}
 
         {/* 4. Medical and Allergy Info */}
         <SectionHeading>Medical and Allergy Information</SectionHeading>
