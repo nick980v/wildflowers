@@ -135,7 +135,7 @@ export default function ContactForm() {
         });
         if (typeof window !== "undefined" && window.gtag) {
           window.gtag("event", "conversion", {
-            send_to: "AW-17139336367/3a6BCNaW2tEaEK-J1uw_", // replace with your actual value
+            send_to: "AW-17139336367/3a6BCNaW2tEaEK-J1uw_",
           });
         }
       } else {
@@ -165,8 +165,9 @@ export default function ContactForm() {
       </SubHeading>
       <Text>
         We aim to get back to you as soon as possible. We can&apos;t wait to
-        welcome you and your little one to Wild flowers; where nature brings
-        learning to life.
+        connect with you and explore how Wild flowers talks and workshops can
+        bring curiosity, connection, and gentle learning to your setting, or
+        your family.
       </Text>
       <Form onSubmit={handleSubmit}>
         <InputsContainer>

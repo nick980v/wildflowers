@@ -1,4 +1,3 @@
-// src/components/Header.js
 "use client";
 
 import Link from "next/link";
@@ -106,7 +105,6 @@ const Header = () => {
 
   return (
     <Navbar>
-      {/* Logo on the left */}
       <div>
         <Link href="/">
           <Image
@@ -131,12 +129,10 @@ const Header = () => {
         </Link>
       </div>
 
-      {/* Mobile menu button */}
       <MobileMenuButton onClick={toggleMenu}>
         {isMenuOpen ? "✕" : "☰"}
       </MobileMenuButton>
 
-      {/* Navigation links */}
       <NavList>
         <li>
           <NavLink href="/approach" $isActive={pathname === "/approach"}>
@@ -144,8 +140,8 @@ const Header = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink href="/fees" $isActive={pathname === "/fees"}>
-            <NavHeading>Our Offer & Fees</NavHeading>
+          <NavLink href="/offer" $isActive={pathname === "/offer"}>
+            <NavHeading>Our Offer</NavHeading>
           </NavLink>
         </li>
         <li>
@@ -153,19 +149,15 @@ const Header = () => {
             <NavHeading>Meet Us</NavHeading>
           </NavLink>
         </li>
+
         <li>
-          <NavLink href="/news" $isActive={pathname === "/news"}>
-            <NavHeading>What&apos;s On</NavHeading>
+          <NavLink href="/calendar" $isActive={pathname === "/calendar"}>
+            <NavHeading>Our Calendar</NavHeading>
           </NavLink>
         </li>
         <li>
           <NavLink href="/gallery" $isActive={pathname === "/gallery"}>
             <NavHeading>Gallery</NavHeading>
-          </NavLink>
-        </li>
-        <li>
-          <NavLink href="/join-us" $isActive={pathname === "/join-us"}>
-            <NavHeading>Join Us</NavHeading>
           </NavLink>
         </li>
         <li>
@@ -175,7 +167,6 @@ const Header = () => {
         </li>
       </NavList>
 
-      {/* Mobile menu */}
       <MobileMenu $isOpen={isMenuOpen}>
         <NavLink
           href="/approach"
@@ -185,13 +176,14 @@ const Header = () => {
         >
           <NavHeading>Our Approach</NavHeading>
         </NavLink>
+
         <NavLink
-          href="/fees"
-          $isActive={pathname === "/fees"}
+          href="/offer"
+          $isActive={pathname === "/offer"}
           $isMobile={true}
           onClick={() => setIsMenuOpen(false)}
         >
-          <NavHeading>Our Offer & Fees</NavHeading>
+          <NavHeading>Our Offer</NavHeading>
         </NavLink>
         <NavLink
           href="/about"
@@ -202,12 +194,12 @@ const Header = () => {
           <NavHeading>Meet Us</NavHeading>
         </NavLink>
         <NavLink
-          href="/news"
-          $isActive={pathname === "/news"}
+          href="/calendar"
+          $isActive={pathname === "/calendar"}
           $isMobile={true}
           onClick={() => setIsMenuOpen(false)}
         >
-          <NavHeading>What&apos;s On</NavHeading>
+          <NavHeading>Our Calendar</NavHeading>
         </NavLink>
         <NavLink
           href="/gallery"
@@ -216,14 +208,6 @@ const Header = () => {
           onClick={() => setIsMenuOpen(false)}
         >
           <NavHeading>Gallery</NavHeading>
-        </NavLink>
-        <NavLink
-          href="/join-us"
-          $isActive={pathname === "/join-us"}
-          $isMobile={true}
-          onClick={() => setIsMenuOpen(false)}
-        >
-          <NavHeading>Join Us</NavHeading>
         </NavLink>
         <NavLink
           href="/contact"

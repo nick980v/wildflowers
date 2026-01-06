@@ -96,6 +96,7 @@
 .text li {
   position: relative;
   padding-left: 2rem;
+  font-weight: 700
 }
 
 .text li::before {
@@ -110,6 +111,11 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.textSpan {
+  display: block;
+  margin-bottom: 1rem;
 }
 
 .sessionText {

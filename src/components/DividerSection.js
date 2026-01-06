@@ -129,19 +129,14 @@ const DividerSection = () => {
       <ContentContainer>
         <DividerHeading>
           We believe that children thrive when given the freedom to{" "}
-          <span>explore</span>, <span>create</span>, and <span>connect</span>.
+          <span>explore</span>, <span>create</span> and <span>connect</span>.
         </DividerHeading>
         <DividerParagraph>
-          Inspired by the pioneering works of Froebel and Montessori, our warm
-          and welcoming early years community provides a space where curiosity
-          blossoms and learning feels like a natural adventure.
-        </DividerParagraph>
-        <DividerParagraph>
-          Our sessions are designed for children aged 0-5, offering a nurturing
-          space where they can explore, play, and grow alongside their parents
-          and carers. We believe that learning is a shared journey, and our
-          welcoming environment encourages both children and their grown-ups to
-          connect, discover, and experience the joy of learning together.
+          At Wild flowers, we deliver thoughtful talks and workshops on child
+          development and gentle, alternative ways of raising and educating
+          children. Inspired by Froebel, Montessori and Reggio Emilia, our
+          sessions support nurseries, schools and parents to create environments
+          where children and the adults around them can flourish.
         </DividerParagraph>
       </ContentContainer>
       <StyledDivider

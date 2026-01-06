@@ -168,14 +168,17 @@ const Hero = () => {
           </StyledHeading>
           <StyledParagraph>
             At Wild flowers, we believe that children thrive when given the
-            freedom to explore, create, and connect with the world around them.
+            freedom to explore, create and connect with the world around them.
           </StyledParagraph>
           <StyledParagraph>
-            Wild flowers is blooming <strong>19th September 2025</strong>; we
-            can&apos;t wait to welcome you to our community! Contact us to book
-            your <span style={{ color: "#D9932C" }}>free</span> drop-in taster
-            sessions running from 09:00 - 16:00 on the{" "}
-            <span style={{ color: "#D9932C" }}>15th & 22nd August 2025!</span>
+            We see children as naturally curious individuals who, like wild
+            flowers, are not meant to grow under the same conditions. Through
+            our{" "}
+            <span style={{ color: "#D9932C" }}>
+              interactive talks and workshops
+            </span>
+            , we share the message that children flourish when they are truly
+            seen, understood and supported in their own unique way.
           </StyledParagraph>
 
           <ButtonContainer>

@@ -113,10 +113,10 @@ const Footer = () => {
             </li>
             <li style={{ marginBottom: "0.5rem" }}>
               <Link
-                href="/fees"
+                href="/offer"
                 style={{ color: "white", textDecoration: "none" }}
               >
-                Our Offer & Fees
+                Our Offer
               </Link>
             </li>
             <li style={{ marginBottom: "0.5rem" }}>
@@ -129,10 +129,10 @@ const Footer = () => {
             </li>
             <li style={{ marginBottom: "0.5rem" }}>
               <Link
-                href="/news"
+                href="/calendar"
                 style={{ color: "white", textDecoration: "none" }}
               >
-                What&apos;s On
+                Our Calendar
               </Link>
             </li>
             <li style={{ marginBottom: "0.5rem" }}>
@@ -141,14 +141,6 @@ const Footer = () => {
                 style={{ color: "white", textDecoration: "none" }}
               >
                 Gallery
-              </Link>
-            </li>
-            <li style={{ marginBottom: "0.5rem" }}>
-              <Link
-                href="/contact#location"
-                style={{ color: "white", textDecoration: "none" }}
-              >
-                Location
               </Link>
             </li>
             <li style={{ marginBottom: "0.5rem" }}>
@@ -218,9 +210,9 @@ const Footer = () => {
               Interested in us?
             </h1>
             <p style={{ color: "white", fontSize: "23px" }}>
-              Whether you have a question, want to learn more about our
-              sessions, or are ready to join the Wild flowers community,
-              we&apos;re here and happy to help.
+              Whether you have a question, want to explore our talks and
+              workshops or are ready to book a session, we&apos;re here and
+              happy to help!
             </p>
           </InterestedTextContainer>
           <InterestedButtonContainer>
