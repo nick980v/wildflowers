@@ -1,9 +1,11 @@
-import Image from "next/image";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import DividerSection from "@/components/DividerSection";
 import FAQs from "@/components/FAQs";
 import Footer from "@/components/Footer";
+
+// Force static generation for better caching
+export const dynamic = "force-static";
 
 export const metadata = {
   title: "Wild flowers Community",

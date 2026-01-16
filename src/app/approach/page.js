@@ -3,6 +3,9 @@ import Header from "@/components/Header";
 import styles from "./page.module.css";
 import Image from "next/image";
 
+// Force static generation for better caching
+export const dynamic = "force-static";
+
 export const metadata = {
   title: "Our Approach - Wild flowers Community",
   description:

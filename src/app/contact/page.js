@@ -3,6 +3,9 @@ import Header from "@/components/Header";
 import styles from "./page.module.css";
 import ContactForm from "@/components/ContactForm";
 
+// Force static generation for better caching
+export const dynamic = "force-static";
+
 export const metadata = {
   title: "Contact Us - Wild flowers Community",
   description:

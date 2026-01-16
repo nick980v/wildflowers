@@ -1,3 +1,6 @@
+// Force static generation for better caching
+export const dynamic = "force-static";
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import styles from "./page.module.css";

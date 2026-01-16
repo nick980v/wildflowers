@@ -1,4 +1,5 @@
-export const dynamic = "force-dynamic";
+// Use ISR to cache the page and revalidate daily
+export const revalidate = 86400; // 24 hours
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";

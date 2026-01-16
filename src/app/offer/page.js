@@ -4,6 +4,9 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
+// Force static generation for better caching
+export const dynamic = "force-static";
+
 export const metadata = {
   title: "Service & Fees - Wild flowers",
   description:
