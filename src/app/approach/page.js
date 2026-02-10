@@ -22,17 +22,16 @@ export default function Approach() {
             The <span style={{ color: "#92262A" }}>Froebelian</span> Approach
           </h1>
           <p className={styles.text}>
-            Friedrich Froebel (1782-1852), the creator of the kindergarten,
-            celebrated the joy of learning through play, creative activity and
-            nature. At Wild flowers, our talks and workshops explore how
-            children can grow through curiosity, imagination, and connection
-            with the natural world, helping adults create environments where
-            wonder and exploration are nurtured.
+            Friedrich Froebel (1782–1852), the father of kindergarten, saw
+            children as active, creative learners who thrive through play,
+            exploration, and connection with nature. He believed that each child
+            is like a seed with great potential, and with the right care and
+            environment, will grow and bloom.
           </p>
         </div>
         <Image
           src="/Froebel.jpg"
-          alt="Claudine photo"
+          alt="Froebel photo"
           className={styles.imageContainer}
           width={684}
           height={100}
@@ -46,12 +45,12 @@ export default function Approach() {
             The <span style={{ color: "#D9932C" }}>Montessori</span> Approach
           </h1>
           <p className={styles.text}>
-            Maria Montessori (1870-1952) believed children flourish when given
-            the freedom to follow their own curiosity. At Wild flowers, we share
-            how fostering independence, purposeful activity and thoughtfully
-            prepared environments can support each child&apos;s natural growth,
-            offering guidance for parents, educators, and anyone who cares for
-            children.
+            Maria Montessori (1870–1952), an Italian physician and educator,
+            believed that children are naturally motivated to learn and flourish
+            when given the freedom to follow their own path. Her method focuses
+            on independence, concentration, purposeful activity, and creating a
+            calm, ordered environment that meets a child&apos;s developmental
+            needs.
           </p>
         </div>
         <Image

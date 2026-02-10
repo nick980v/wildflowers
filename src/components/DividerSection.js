@@ -132,11 +132,14 @@ const DividerSection = () => {
           <span>explore</span>, <span>create</span> and <span>connect</span>.
         </DividerHeading>
         <DividerParagraph>
-          At Wild flowers, we deliver thoughtful talks and workshops on child
-          development and gentle, alternative ways of raising and educating
-          children. Inspired by Froebel, Montessori and Reggio Emilia, our
-          sessions support nurseries, schools and parents to create environments
-          where children and the adults around them can flourish.
+          Inspired by the works of Froebel, Montessori and Reggio Emilia, our
+          welcoming community provides a space where learning feels like a
+          natural adventure. Our sessions are designed for children aged 0-8,
+          offering a nurturing space where they can explore, play, and grow
+          alongside their parents and carers. We believe that learning is a
+          shared journey, and our warm environment encourages both children and
+          their grown-ups to connect, discover, and experience the joy of
+          learning together.
         </DividerParagraph>
       </ContentContainer>
       <StyledDivider

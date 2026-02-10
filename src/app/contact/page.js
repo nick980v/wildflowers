@@ -22,10 +22,9 @@ export default function Contact() {
             Contact <span style={{ color: "#D9932C" }}>Us</span>
           </h1>
           <p className={styles.text}>
-            Interested in booking with Wild flowers? Whether you have a
-            question, would like to learn more about our talks and workshops, or
-            wish to book a free consultation to explore what would best suit
-            your setting, we&apos;d love to hear from you.
+            Interested in joining Wild flowers? Whether you have a question,
+            want to learn more about our sessions, or are ready to join the Wild
+            flowers community, we&apos;re here and happy to help!
           </p>
         </div>
       </div>
