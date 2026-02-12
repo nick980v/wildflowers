@@ -141,7 +141,7 @@ const Header = () => {
         </li>
         <li>
           <NavLink href="/offer" $isActive={pathname === "/offer"}>
-            <NavHeading>Our Offer</NavHeading>
+            <NavHeading>Our Offer & Fees</NavHeading>
           </NavLink>
         </li>
         <li>
@@ -183,7 +183,7 @@ const Header = () => {
           $isMobile={true}
           onClick={() => setIsMenuOpen(false)}
         >
-          <NavHeading>Our Offer</NavHeading>
+          <NavHeading>Our Offer & Fees</NavHeading>
         </NavLink>
         <NavLink
           href="/about"

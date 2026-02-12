@@ -116,7 +116,7 @@ const Footer = () => {
                 href="/offer"
                 style={{ color: "white", textDecoration: "none" }}
               >
-                Our Offer
+                Our Offer & Fees
               </Link>
             </li>
             <li style={{ marginBottom: "0.5rem" }}>

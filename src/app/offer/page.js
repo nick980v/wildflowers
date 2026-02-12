@@ -19,11 +19,11 @@ export default function Fees() {
       <Header />
       <div className={styles.container}>
         <div className={styles.contentContainer}>
-          <h1 className={styles.heading}>Our Offer & Fees</h1>
+          <h1 className={styles.heading}>Our Offer</h1>
           <p className={styles.text}>
             At Wild flowers, we offer gentle, alternative educational sessions
-            for children aged 0-8 and their parents/ carers, creating space for
-            connection, learning and community. Inspired by nature and the
+            for children aged 0-8 and their parents and carers, creating space
+            for connection, learning and community. Inspired by nature and the
             environment, our sessions offer a hands-on, exploratory experience
             that goes beyond mainstream approaches. They are rooted in the early
             years and national curriculum, while also nurturing essential life
@@ -33,6 +33,27 @@ export default function Fees() {
           <p className={styles.text}>
             Our sessions are particularly well suited to home-educating families
             seeking a thoughtful, child-centred approach.
+          </p>
+          <h1 className={styles.heading}>Our Fees</h1>
+          <p className={styles.text}>
+            Wild flowers runs every Friday, offering a single, gentle,
+            nature-inspired session from 10:00am to 1:00pm.
+          </p>
+          <p className={styles.text}>
+            Wild flowers sessions are £15 per child for each 3-hour session,
+            payable half-termly or termly in advance. This includes all learning
+            materials and resources, so families can simply arrive and enjoy the
+            session.
+          </p>
+          <p className={styles.text}>
+            Please{" "}
+            <Link href="/contact">
+              <span style={{ color: "#D9932C", textDecoration: "underline" }}>
+                contact us
+              </span>
+            </Link>{" "}
+            to explore our sibling discounts, available for families attending
+            together.
           </p>
         </div>
         <Image

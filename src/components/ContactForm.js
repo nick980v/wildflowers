@@ -140,12 +140,12 @@ export default function ContactForm() {
         }
       } else {
         setStatus(
-          "Error sending message. Please email us directly at enquiries@wildflowerscommunity.uk"
+          "Error sending message. Please email us directly at enquiries@wildflowerscommunity.uk",
         );
       }
     } catch (error) {
       setStatus(
-        "Error sending message. Please email us directly at enquiries@wildflowerscommunity.uk"
+        "Error sending message. Please email us directly at enquiries@wildflowerscommunity.uk",
       );
     } finally {
       setIsLoading(false);
@@ -164,10 +164,9 @@ export default function ContactForm() {
         Contact Form
       </SubHeading>
       <Text>
-        We aim to get back to you as soon as possible. We can&apos;t wait to
-        connect with you and explore how Wild flowers talks and workshops can
-        bring curiosity, connection, and gentle learning to your setting, or
-        your family.
+        We aim to respond as soon as we can. We can&apos;t wait to welcome you
+        and your children to Wild flowers, where curiosity blooms and learning
+        grows naturally.
       </Text>
       <Form onSubmit={handleSubmit}>
         <InputsContainer>

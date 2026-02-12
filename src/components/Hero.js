@@ -169,18 +169,13 @@ const Hero = () => {
           <StyledParagraph>
             At Wild flowers, we believe that children thrive when given the
             freedom to explore, create and connect with the world around them.
+            We see children as naturally curious individuals who, like wild
+            flowers, are not meant to grow under the same conditions.
           </StyledParagraph>
           <StyledParagraph>
-            We see children as naturally curious individuals who, like wild
-            flowers, are not meant to grow under the same conditions. Through
-            our{" "}
-            <span style={{ color: "#D9932C" }}>
-              interactive talks and workshops
-            </span>
-            , we share the message that children flourish when they are truly
-            seen, understood and supported in their own unique way.
+            Through carefully planned, play-based learning sessions, we support
+            children aged 0-8 to develop, learn and thrive as individuals.
           </StyledParagraph>
-
           <ButtonContainer>
             <Button bgColor="#D9932C" href="/approach">
               Learn More

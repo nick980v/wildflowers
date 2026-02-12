@@ -136,10 +136,12 @@ const DividerSection = () => {
           welcoming community provides a space where learning feels like a
           natural adventure. Our sessions are designed for children aged 0-8,
           offering a nurturing space where they can explore, play, and grow
-          alongside their parents and carers. We believe that learning is a
-          shared journey, and our warm environment encourages both children and
-          their grown-ups to connect, discover, and experience the joy of
-          learning together.
+          alongside their parents and carers.
+        </DividerParagraph>
+        <DividerParagraph>
+          We believe that learning is a shared journey, and our warm environment
+          encourages both children and their grown-ups to connect, discover, and
+          experience the joy of learning together.
         </DividerParagraph>
       </ContentContainer>
       <StyledDivider

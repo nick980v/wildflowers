@@ -70,7 +70,51 @@ export default function About() {
           />
         </div>
       </div>
-
+      <div className={styles.container}>
+        <div className={styles.imageContainer}>
+          <Image
+            src="/Claudine-headshot.jpg"
+            alt="Claudine photo"
+            className={styles.headshot}
+            width={3060}
+            height={100}
+            priority
+          />
+          <Image
+            src="/Petal.svg"
+            alt="Decorative white flower"
+            width={158}
+            height={158}
+            className={styles.whiteFlower}
+            priority
+          />
+          <Image
+            src="/Lavender.svg"
+            alt="Decorative blue flower"
+            width={325}
+            height={325}
+            className={styles.blueFlower}
+            priority
+          />
+        </div>
+        <div className={styles.contentContainer}>
+          <p className={styles.text}>
+            Lauren brings extensive experience across both school and community
+            settings, with 13 years dedicated to working with children and
+            families and 10 years in educational leadership. Her leadership
+            experience includes mentoring, undertaking senior roles across Key
+            Stage 1 and Key Stage 2, and holding strategic responsibility in the
+            Special Educational Needs and Disabilities (SEND) sector.
+          </p>
+          <p className={styles.text}>
+            She holds a First Class BA (Hons) in Primary Education with QTS,
+            with experience teaching across all primary year groups. She is
+            additionally trained in therapeutic behaviour approaches, certified
+            in Level 3 Safeguarding and holds a Full Paediatric First Aid
+            qualification.
+          </p>
+        </div>
+      </div>
       <Footer />
     </main>
   );
