@@ -22,10 +22,10 @@ export default function About() {
             Meet <span style={{ color: "#D9932C" }}>Us</span>
           </h1>
           <p className={styles.text}>
-            Claudine is the heart behind Wild flowers – a passionate and
-            experienced practitioner with over eight years of experience working
-            with children, including those with Special Educational Needs and
-            Disabilities.
+            <span style={{ color: "#D9932C" }}>Claudine</span> is the heart
+            behind Wild flowers – a passionate and experienced practitioner with
+            over eight years of experience working with children, including
+            those with Special Educational Needs and Disabilities.
           </p>
           <p className={styles.text}>
             She holds a First Class Degree in Applied Education Studies, and is
@@ -35,20 +35,21 @@ export default function About() {
             connection.
           </p>
           <p className={styles.text}>
-            Claudine has also completed relevant training in therapeutic
-            behaviour approaches, safeguarding and is fully first aid trained,
-            ensuring a safe, nurturing, and inclusive environment for every
-            child and family. Wild flowers reflects Claudine&apos;s belief in
-            the power of community, creativity, and curiosity, where children
-            and their grown-ups can grow, explore, and learn together.
+            <span style={{ color: "#D9932C" }}>Claudine</span> has also
+            completed relevant training in therapeutic behaviour approaches,
+            safeguarding and is fully first aid trained, ensuring a safe,
+            nurturing, and inclusive environment for every child and family.
+            Wild flowers reflects Claudine&apos;s belief in the power of
+            community, creativity, and curiosity, where children and their
+            grown-ups can grow, explore, and learn together.
           </p>
         </div>
         <div className={styles.imageContainer}>
           <Image
-            src="/Claudine-headshot.jpg"
+            src="/claudie.jpeg"
             alt="Claudine photo"
             className={styles.headshot}
-            width={3060}
+            width={3210}
             height={100}
             priority
           />
@@ -73,10 +74,10 @@ export default function About() {
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           <Image
-            src="/Claudine-headshot.jpg"
+            src="/lauren1.jpeg"
             alt="Claudine photo"
             className={styles.headshot}
-            width={3060}
+            width={3007}
             height={100}
             priority
           />
@@ -99,19 +100,20 @@ export default function About() {
         </div>
         <div className={styles.contentContainer}>
           <p className={styles.text}>
-            Lauren brings extensive experience across both school and community
-            settings, with 13 years dedicated to working with children and
-            families and 10 years in educational leadership. Her leadership
-            experience includes mentoring, undertaking senior roles across Key
-            Stage 1 and Key Stage 2, and holding strategic responsibility in the
-            Special Educational Needs and Disabilities (SEND) sector.
+            <span style={{ color: "#D9932C" }}>Lauren</span> brings extensive
+            experience across both school and community settings, with 13 years
+            dedicated to working with children and families and 10 years in
+            educational leadership. Her leadership experience includes
+            mentoring, undertaking senior roles across Key Stage 1 and Key Stage
+            2, and holding strategic responsibility in the Special Educational
+            Needs and Disabilities (SEND) sector.
           </p>
           <p className={styles.text}>
-            She holds a First Class BA (Hons) in Primary Education with QTS,
-            with experience teaching across all primary year groups. She is
-            additionally trained in therapeutic behaviour approaches, certified
-            in Level 3 Safeguarding and holds a Full Paediatric First Aid
-            qualification.
+            <span style={{ color: "#D9932C" }}>Lauren</span> holds a First Class
+            BA (Hons) in Primary Education with QTS, with experience teaching
+            across all primary year groups. She is additionally trained in
+            therapeutic behaviour approaches, certified in Level 3 Safeguarding
+            and holds a Full Paediatric First Aid qualification.
           </p>
         </div>
       </div>

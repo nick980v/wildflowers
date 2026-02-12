@@ -51,22 +51,22 @@ const ContentContainer = styled.div`
 
 const StyledHeading = styled.h1`
   color: white;
-  font-size: 42px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 900;
   line-height: 110%;
   height: auto;
 
   @media (min-width: 640px) {
-    font-size: 52px;
+    font-size: 42px;
   }
 
   @media (min-width: 768px) {
-    font-size: 62px;
+    font-size: 42px;
   }
 
   @media (min-width: 1024px) {
-    font-size: 62px;
+    font-size: 48px;
   }
 
   span {
@@ -201,7 +201,7 @@ const Hero = () => {
             priority
           />
           <StyledImage
-            src="/ForestImage.png"
+            src="/riv.jpeg"
             alt="Forest Play"
             fill
             sizes="(min-width: 1024px) 700px, 100vw"

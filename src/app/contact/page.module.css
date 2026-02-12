@@ -65,7 +65,7 @@
 
   @media (min-width: 640px) {
     .heading {
-      font-size: 52px;
+      font-size: 42px;
     }
     .text {
       font-size: 20px;
@@ -74,7 +74,7 @@
   
   @media (min-width: 768px) {
     .heading {
-      font-size: 62px;
+      font-size: 42px;
     }
     .text {
       font-size: 22px;
@@ -83,10 +83,10 @@
   
   @media (min-width: 1024px) {
     .heading {
-      font-size: 82.56px;
+      font-size: 48px;
     }
     .subHeading {
-      font-size: 48px
+      font-size: 42px
     }
     .text {
       font-size: 24px;

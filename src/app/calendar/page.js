@@ -20,10 +20,10 @@ export default async function OurCalendar() {
         </h1>
         <div className={styles.contentContainer}>
           <p className={styles.text}>
-            Our Wild flowers calendar shares upcoming talks, workshops, and
-            events, as well as current availability for bookings. Sessions take
-            place throughout the year and gently evolve with the seasons, the
-            settings, and the communities we work alongside.
+            Our Wild flowers calendar shares details of upcoming sessions and
+            our term dates. We run a 12-week programme, with sessions gently
+            shaped by the seasons, our natural surroundings and the families
+            within our community.
           </p>
         </div>
         <div

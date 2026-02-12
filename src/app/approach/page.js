@@ -2,15 +2,34 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import styles from "./page.module.css";
 import Image from "next/image";
-
-// Force static generation for better caching
-export const dynamic = "force-static";
+import Timeline from "@/components/Timeline";
 
 export const metadata = {
   title: "Our Approach - Wild flowers Community",
   description:
     "Discover the unique blend of Froebelian and Montessori approaches at Wild flowers community. Learn how we foster child-led, nature-based learning through play, exploration, and purposeful activity.",
 };
+
+const froebelTimelineItems = [
+  {
+    text: "We honour play as the foundation of learning (Froebel), creating space for open-ended exploration, imagination and meaningful hands-on experiences.",
+  },
+  {
+    text: "We nurture a connection with nature (Froebel), using the natural world as a living classroom that inspires curiosity, care and wonder.",
+  },
+  {
+    text: "We encourage independence and real-life skills (Montessori), offering child-sized tools, purposeful activities and freedom within gentle boundaries.",
+  },
+  {
+    text: "We respect each child’s individual pace of development (Montessori), allowing children time to concentrate, repeat and master new skills.",
+  },
+  {
+    text: "We see children as capable, curious learners (Reggio Emilia), valuing their ideas, questions and theories as an important part of the learning process.",
+  },
+  {
+    text: "We create a thoughtful learning environment and strong sense of community (Reggio Emilia), where relationships, collaboration and belonging are central to everything we do.",
+  },
+];
 
 export default function Approach() {
   return (
@@ -31,7 +50,7 @@ export default function Approach() {
         </div>
         <Image
           src="/Froebel.jpg"
-          alt="Froebel photo"
+          alt="Claudine photo"
           className={styles.imageContainer}
           width={684}
           height={100}
@@ -68,23 +87,30 @@ export default function Approach() {
             The <span style={{ color: "#9cb7d4" }}>Reggio Emilia</span> Approach
           </h1>
           <p className={styles.text}>
-            The Reggio Emilia approach, developed in post-war Italy, values
-            children as capable, curious and expressive individuals. In our
-            talks and workshops, Wild flowers shows how to honour
-            children&apos;s voices, encourage collaboration and create rich,
-            engaging environments that inspire learning, creativity and
-            connection.
+            Maria Montessori (1870–1952), an Italian physician and educator,
+            believed that children are naturally motivated to learn and flourish
+            when given the freedom to follow their own path. Her method focuses
+            on independence, concentration, purposeful activity, and creating a
+            calm, ordered environment that meets a child&apos;s developmental
+            needs.
           </p>
         </div>
         <Image
-          src="/Montesorry.jpg"
-          alt="Montesorri photo"
+          src="/emilia.jpeg"
+          alt="reggio emilia photo"
           className={styles.imageContainer}
           width={684}
           height={100}
         />
       </div>
 
+      <h1 className={styles.subHeading} style={{ marginBottom: "3rem" }}>
+        How We Honour <span style={{ color: "#92262A" }}>Froebel&apos;s</span>{" "}
+        and <span style={{ color: "#D9932C" }}>Montessori&apos;s</span> Legacy
+        and Apply the <span style={{ color: "#9cb7d4" }}>Reggio Emilia</span>{" "}
+        Principles
+      </h1>
+      <Timeline timelineItems={froebelTimelineItems} dotColor={"#92262A"} />
       <Footer />
     </main>
   );

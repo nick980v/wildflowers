@@ -19,7 +19,9 @@ export default function Fees() {
       <Header />
       <div className={styles.container}>
         <div className={styles.contentContainer}>
-          <h1 className={styles.heading}>Our Offer</h1>
+          <h1 className={styles.heading}>
+            Our <span style={{ color: "#D9932C" }}>Offer</span>
+          </h1>
           <p className={styles.text}>
             At Wild flowers, we offer gentle, alternative educational sessions
             for children aged 0-8 and their parents and carers, creating space
@@ -34,7 +36,9 @@ export default function Fees() {
             Our sessions are particularly well suited to home-educating families
             seeking a thoughtful, child-centred approach.
           </p>
-          <h1 className={styles.heading}>Our Fees</h1>
+          <h1 className={styles.heading}>
+            Our <span style={{ color: "#D9932C" }}>Fees</span>
+          </h1>
           <p className={styles.text}>
             Wild flowers runs every Friday, offering a single, gentle,
             nature-inspired session from 10:00am to 1:00pm.
@@ -89,7 +93,8 @@ export default function Fees() {
 
             <div className={styles.contentContainer}>
               <h1 className={styles.subHeading}>
-                Our 12-Week Seasonal Journey
+                Our 12-Week <span style={{ color: "#D9932C" }}>Seasonal</span>{" "}
+                Journey
               </h1>
 
               <p className={styles.text}>
