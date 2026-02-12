@@ -22,15 +22,57 @@ export default function Contact() {
             Contact <span style={{ color: "#D9932C" }}>Us</span>
           </h1>
           <p className={styles.text}>
-            Interested in booking with Wild flowers? Whether you have a
-            question, would like to learn more about our talks and workshops, or
-            wish to book a free consultation to explore what would best suit
-            your setting, we&apos;d love to hear from you.
+            Interested in joining Wild flowers? Whether you have a question,
+            want to learn more about our sessions, or are ready to join the Wild
+            flowers community, we&apos;re here and happy to help!
           </p>
         </div>
       </div>
       <ContactForm />
-      <div className={styles.container}></div>
+      {/* Location Section */}
+      <div style={{ marginTop: "2rem", maxWidth: 566 }}>
+        <h1
+          id="location"
+          className={styles.heading}
+          style={{ fontSize: 40, marginBottom: 8 }}
+        >
+          Where are we located?
+        </h1>
+        <p className={styles.text} style={{ marginBottom: 8 }}>
+          Scout hut
+          <br />
+          Meads Lane
+          <br />
+          Wheathampstead
+          <br />
+          St Albans
+          <br />
+          AL4 8BW
+        </p>
+        <div
+          style={{
+            borderRadius: 12,
+            overflow: "hidden",
+            boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+            marginBottom: 16,
+          }}
+        >
+          <iframe
+            title="Wild flowers location map"
+            width="100%"
+            height="300"
+            style={{ border: 0, width: "100%", minHeight: 300 }}
+            src="https://www.google.com/maps?q=51.813108570558185,-0.2897190754087065&z=16&output=embed"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <p className={styles.text} style={{ fontSize: 14, color: "white" }}>
+          The Scout Hut is located at the end of Meads Lane, Wheathampstead.
+          Parking is available on a nearby lane or up by the car park of the
+          Marford Memorial Hall. Please follow signs for the Scout Hut once you
+          arrive.
+        </p>
+      </div>
       <Footer />
     </main>
   );

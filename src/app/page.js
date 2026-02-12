@@ -21,7 +21,8 @@ export default function Home() {
       <Header />
       <Hero />
       <DividerSection />
-      <FAQs />
+      {/* FAQs hidden */}
+      {/* <FAQs /> */}
       <Footer />
     </main>
   );

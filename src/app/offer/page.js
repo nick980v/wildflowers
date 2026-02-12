@@ -19,23 +19,45 @@ export default function Fees() {
       <Header />
       <div className={styles.container}>
         <div className={styles.contentContainer}>
-          <h1 className={styles.heading}>Our Offer</h1>
+          <h1 className={styles.heading}>
+            Our <span style={{ color: "#D9932C" }}>Offer</span>
+          </h1>
           <p className={styles.text}>
-            At Wild flowers, we deliver thoughtful, accessible talks and
-            workshops on child development and alternative, compassionate ways
-            of raising and educating children. We work with nurseries, schools
-            and parents, offering sessions that invite reflection, challenge
-            traditional narratives, and deepen understanding of how children
-            grow, learn and behave.
+            At Wild flowers, we offer gentle, alternative educational sessions
+            for children aged 0-8 and their parents and carers, creating space
+            for connection, learning and community. Inspired by nature and the
+            environment, our sessions offer a hands-on, exploratory experience
+            that goes beyond mainstream approaches. They are rooted in the early
+            years and national curriculum, while also nurturing essential life
+            skills such as emotional awareness, communication, creativity and
+            independence.
           </p>
           <p className={styles.text}>
-            Our talks are rooted in well-established approaches to early
-            childhood education, including the work of Froebel, Montessori and
-            Reggio Emilia, and are shaped by a gentle, child-centred philosophy.
-            Through our work, we focus on helping adults understand children as
-            curious, capable and unique individuals, and explore ways to create
-            environments where both children and the adults around them can
-            flourish.
+            Our sessions are particularly well suited to home-educating families
+            seeking a thoughtful, child-centred approach.
+          </p>
+          <h1 className={styles.heading}>
+            Our <span style={{ color: "#D9932C" }}>Fees</span>
+          </h1>
+          <p className={styles.text}>
+            Wild flowers runs every Friday, offering a single, gentle,
+            nature-inspired session from 10:00am to 1:00pm.
+          </p>
+          <p className={styles.text}>
+            Wild flowers sessions are £15 per child for each 3-hour session,
+            payable half-termly or termly in advance. This includes all learning
+            materials and resources, so families can simply arrive and enjoy the
+            session.
+          </p>
+          <p className={styles.text}>
+            Please{" "}
+            <Link href="/contact">
+              <span style={{ color: "#D9932C", textDecoration: "underline" }}>
+                contact us
+              </span>
+            </Link>{" "}
+            to explore our sibling discounts, available for families attending
+            together.
           </p>
         </div>
         <Image
@@ -71,55 +93,43 @@ export default function Fees() {
 
             <div className={styles.contentContainer}>
               <h1 className={styles.subHeading}>
-                Themes of our Talks and Workshops
+                Our 12-Week <span style={{ color: "#D9932C" }}>Seasonal</span>{" "}
+                Journey
               </h1>
 
               <p className={styles.text}>
-                Our talks explore a range of themes rooted in child development
-                and gentle, alternative approaches to learning and raising
-                children. Each session invites reflection, discussion and a
-                deeper understanding of children&apos;s needs, while remaining
-                responsive to the audience and setting.
+                Each Wild flowers term follows a thoughtfully designed 12-week
+                programme, rooted in the Early Years Foundation Stage (EYFS) and
+                the National Curriculum, and inspired by the natural world,
+                play-based learning, and meaningful connections.
+              </p>
+              <p className={styles.text}>
+                Throughout the term, children and their grown-ups explore themes
+                such as:
               </p>
               <ul className={styles.text}>
-                <li>Behaviour as Communication</li>
-                <span className={styles.textSpan}>
-                  Exploring what children’s behaviour may be telling us, and how
-                  responding with curiosity and empathy can strengthen
-                  connection and understanding
-                </span>
-                <li>Child-Led Learning</li>
-                <span className={styles.textSpan}>
-                  Recognising the importance of play, curiosity and exploration
-                  in early childhood, and how to support children in their
-                  learning journey.
-                </span>
-                <li>Slowing Down Childhood</li>
-                <span className={styles.textSpan}>
-                  Gently challenging the pressures placed on children, and
-                  considering how a slower, more respectful pace can support
-                  wellbeing and development.
-                </span>
-                <li>Creating Calm, Connected Environments</li>
-                <span className={styles.textSpan}>
-                  Exploring how relationships, routines, and environments can
-                  help children feel safe, regulated, and ready to learn.
-                </span>
-                <li>Learning Through Nature</li>
-                <span className={styles.textSpan}>
-                  Exploring the importance of children’s connection with the
-                  natural world, and how time outdoors supports wellbeing,
-                  curiosity, and holistic development.
-                </span>
+                <li>Community & Connection</li>
+
+                <li>Nature Exploration & Seasonal Changes</li>
+
+                <li>Movement, Music & Storytelling</li>
+
+                <li>Gardening, Growing & the Natural World</li>
+
+                <li>Creative Construction & Hands-on Making</li>
+                <li>Light, Shadow & Sensory Play</li>
+                <li>Kindness, Pattern & Playful Discover</li>
               </ul>
               <p className={styles.text}>
-                To discuss specific themes, talks and/or workshops please{" "}
-                <Link
-                  href="/contact"
-                  style={{ color: "#D9932C", textDecoration: "none" }}
-                >
-                  Contact Us!
-                </Link>
+                We end each term with a gentle celebration and reflection,
+                honouring the children’s experiences and the magic of learning
+                through nature.
+              </p>
+              <p className={styles.text}>
+                <span style={{ color: "#D9932C" }}>Please note: </span>We take a
+                break during the Christmas, Easter, and summer holidays to rest,
+                reflect, and prepare for the next chapter of our journey
+                together.
               </p>
             </div>
           </div>
