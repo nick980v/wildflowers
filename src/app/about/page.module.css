@@ -29,6 +29,9 @@
       justify-content: space-between;
       gap: 60px;
     }
+    .containerImageFirst {
+      flex-direction: row-reverse;
+    }
   } 
 
   .contentContainer {

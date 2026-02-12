@@ -87,12 +87,11 @@ export default function Approach() {
             The <span style={{ color: "#9cb7d4" }}>Reggio Emilia</span> Approach
           </h1>
           <p className={styles.text}>
-            Maria Montessori (1870–1952), an Italian physician and educator,
-            believed that children are naturally motivated to learn and flourish
-            when given the freedom to follow their own path. Her method focuses
-            on independence, concentration, purposeful activity, and creating a
-            calm, ordered environment that meets a child&apos;s developmental
-            needs.
+            The Reggio Emilia approach, developed in post-war Italy, values
+            children as capable, curious, and expressive individuals. In our
+            talks and workshops, Wild flowers shows how to honour children’s
+            voices, encourage collaboration, and create rich, engaging
+            environments that inspire learning, creativity, and connection.
           </p>
         </div>
         <Image

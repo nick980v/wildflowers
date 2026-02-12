@@ -91,7 +91,6 @@ const StyledParagraph = styled.p`
 const ButtonContainer = styled.div`
   margin-top: 32px;
   display: flex;
-  flex-direction: column;
   gap: 16px;
 
   @media (min-width: 640px) {
@@ -105,6 +104,8 @@ const ImageContainer = styled.div`
   height: auto;
   position: relative;
   aspect-ratio: 684/763;
+  margin-top: 32px;
+  margin-bottom: 32px;
 
   @media (min-width: 640px) {
     width: 80%;
@@ -116,6 +117,7 @@ const ImageContainer = styled.div`
 
   @media (min-width: 1024px) {
     margin-top: 0;
+    margin-bottom: 0;
     width: auto;
     flex: 1;
     max-width: 500px;
