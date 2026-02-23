@@ -164,9 +164,13 @@ export default function ContactForm() {
         Contact Form
       </SubHeading>
       <Text>
-        We aim to respond as soon as we can. We can&apos;t wait to welcome you
-        and your children to Wild flowers, where curiosity blooms and learning
-        grows naturally.
+        We aim to respond as soon as we can. Please note that some response
+        emails may occasionally land in your junk or spam folder, so be sure to
+        keep an eye on it.
+      </Text>
+      <Text>
+        We can&apos;t wait to welcome you and your children to Wild flowers,
+        where curiosity blooms and learning grows naturally.
       </Text>
       <Form onSubmit={handleSubmit}>
         <InputsContainer>
