@@ -4,9 +4,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-marco: 'marco', serif; /* Body font */
-  --font-fatfrank: 'fatfrank', sans-serif; /* Main heading font */
-  --font-providence-sans: 'ff-providence-sans-web-pro', sans-serif; /* Subheading font */
+  --font-marco: 'marco', Georgia, "Times New Roman", serif; /* Body font */
+  --font-fatfrank: 'fatfrank', system-ui,  -apple-system, BlinkMacSystemFont, sans-serif; /* Main heading font */
+  --font-providence-sans: 'ff-providence-sans-web-pro', system-ui, BlinkMacSystemFont, "Segoe UI", sans-serif; /* Subheading font */
 }
 
 
@@ -21,12 +21,17 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-marco); 
+  font-size-adjust: 0.5; /* tune between 0.48–0.54 by eye */
 }
 
 h1 {
   font-family: var(--font-fatfrank); 
+  font-size-adjust: 0.53; /* try 0.5–0.56 depending on how bold it looks */
+
 }
 
 h2, h3, h4 {
   font-family: var(--font-providence-sans);
+  font-size-adjust: 0.52;
+
 }
